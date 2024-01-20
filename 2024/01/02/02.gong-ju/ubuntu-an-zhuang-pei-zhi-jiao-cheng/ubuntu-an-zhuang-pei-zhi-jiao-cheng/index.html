@@ -1,0 +1,2232 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Ubuntu安装配置教程, 数字 数字技术 网络 数字网络 研究栈 技术研究栈 计算机">
+    <meta name="description" content="数字技术栈 | 数字网络栈">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google-site-verification" content="pBWoGvVEP36FzzS4xIpoMejc5UKi3RKcxd9rWWcjiDg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Ubuntu安装配置教程 | 数字技术栈</title>
+
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://mlwtools.github.io/picx-images-hosting/20240118/1705551864340.ico">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?aaa6c944b0ed07922901d7fc571a171d";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="数字技术栈" type="application/atom+xml">
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210101002438.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://mlwtools.github.io/picx-images-hosting/20240118/1705551743020.webp" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">数字技术栈</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/census">
+          
+          <i class="fas fa-layer-group" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>统计</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archives">
+          
+          <i class="fas fa-paper-plane" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>时轴</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>分类</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags">
+          
+          <i class="fas fa-tag" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>标签</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-heartbeat" style="zoom: 0.6;"></i>
+      
+      <span>清单</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/List/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/List/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/List/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>视频</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-envelope" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tools" class="waves-effect waves-light">
+      
+      <i class="fas fa-suitcase" style="zoom: 0.6;"></i>
+      
+      <span>百宝箱</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Windows" class="waves-effect waves-light">
+      
+      <i class="fas fa-desktop" style="zoom: 0.6;"></i>
+      
+      <span>Windows</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-link" style="zoom: 0.6;"></i>
+      
+      <span>友链</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://mlwtools.github.io/picx-images-hosting/20240118/1705551743020.webp" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">数字技术栈</div>
+        <div class="logo-desc">
+            
+            数字技术栈 | 数字网络栈
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-archive"></i>
+			
+			归档
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/census " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-layer-group" style="position: absolute;left:50px" ></i>
+			      
+		          <span>统计</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/archives " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-paper-plane" style="position: absolute;left:50px" ></i>
+			      
+		          <span>时轴</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/categories " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>分类</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/tags " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tag" style="position: absolute;left:50px" ></i>
+			      
+		          <span>标签</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-heartbeat"></i>
+			
+			清单
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/List/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/List/galleries " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/List/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>视频</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-envelope"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tools" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-suitcase"></i>
+			
+			百宝箱
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Windows" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-desktop"></i>
+			
+			Windows
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-link"></i>
+			
+			友链
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/mlwtools/" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/mlwtools/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = 'cf026e86c87d58967e73f3900a6ca155cf805c868762a9ab474a791a0d0deadf';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://itcoder063.github.io/picx-images-hosting/imgs/1704952340075.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Ubuntu安装配置教程</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        background-color: white;
+        width: 345px;
+        padding-left: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+    
+    #toc-content {
+        height: calc(100vh - 300px);
+        overflow: scroll;
+
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+        bottom: 120px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/software/">
+                                <span class="chip bg-color">software</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                工具
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-01-02
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    20 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Ubuntu安装配置教程"><a href="#Ubuntu安装配置教程" class="headerlink" title="Ubuntu安装配置教程"></a>Ubuntu安装配置教程</h1><h2 id="安装Ubuntu"><a href="#安装Ubuntu" class="headerlink" title="安装Ubuntu"></a>安装Ubuntu</h2><h3 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h3><ul>
+<li>访问 <a target="_blank" rel="noopener" href="http://cn.ubuntu.com/download/">http://cn.ubuntu.com/download/</a> 下载 Ubuntu 16.04 版本</li>
+<li>在操作系统上安装 <code>VMWare</code> 虚拟机软件</li>
+</ul>
+<blockquote>
+<p>为什么要使用虚拟机？</p>
+<ol>
+<li>不需要准备 <strong>额外的电脑</strong></li>
+<li>在虚拟机中可以 <strong>大胆尝试任何操作</strong>，不用担心造成不可逆转的破坏</li>
+</ol>
+</blockquote>
+<h3 id="基本安装"><a href="#基本安装" class="headerlink" title="基本安装"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44519484/article/details/107094779?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~PayColumn-1-107094779-blog-105742687.pc_relevant_3mothn_strategy_and_data_recovery&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~PayColumn-1-107094779-blog-105742687.pc_relevant_3mothn_strategy_and_data_recovery&amp;utm_relevant_index=1">基本安装</a></h3><ul>
+<li>有了映像文件之后，只需要按照提示一步一步操作即可安装 Ubuntu 了</li>
+<li><strong>提示</strong>，在开始安装之前，请确认勾选了 <strong>在虚拟机中访问个人文件夹</strong>，如下图所示：</li>
+</ul>
+<blockquote>
+<p>该选项可以方便地实现在 <strong>虚拟机</strong> 和 <strong>个人电脑</strong> 之间共享文件</p>
+</blockquote>
+<p>step1：打开第一步所下载的VMware Workstation。在主界面中，选择【创建新的虚拟机】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953409425.jpg" alt="1704953409425"></p>
+<p>step2：如图，会自动弹出【新建虚拟向导】，选择【自定义（高级）】后，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953481410.jpg" alt="1704953481410"></p>
+<p>step3：这一步选择默认值即可，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953511039.jpg" alt="1704953511039"></p>
+<p>step4：选择【稍后安装操作系统】，点击【下一步】</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953536446.jpg" alt="1704953536446"></p>
+<p>step5：输入【Your name】【Your computer’s name】【Pick a username】【Choose a password】【Confirm your password】后，点击【Continue】。这里建议密码设置的简单一些，因为Ubuntu后续很多操作需要验证密码，设置复杂的密码后期会比较麻烦。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953558183.jpg" alt="1704953558183"></p>
+<p>step6：填写【虚拟机名称】及【位置】，点击【下一步】。【虚拟机名称】即虚拟机的名字。【位置】可以选择容量较大的硬盘位置。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953584759.jpg" alt="1704953584759"></p>
+<p>step7：【处理器数量】与【每个处理器的内核数量】选择2后，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953614077.jpg" alt="1704953614077"></p>
+<p>step8：选择【此虚拟机的内存】，此值应依据电脑本身情况酌情调整。常用值为1G（1024MB）、2G（2048MB）、4G（4096MB）等等。在这里选择4G。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953644056.jpg" alt="1704953644056"></p>
+<p>step9：选择【使用网络地址转换】，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953674291.jpg" alt="1704953674291"></p>
+<p>step10：选择推荐的【LSI Logic】即可，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953695797.jpg" alt="1704953695797"></p>
+<p>step11：选择推荐的【SCSI】即可，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953718145.jpg" alt="1704953718145"></p>
+<p>step12：选择【创建新虚拟磁盘】，点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953740424.jpg" alt="1704953740424"></p>
+<p>step13：设置【最大磁盘大小】为1024，并选择【将虚拟磁盘拆分成多个文件】后，点击【下一步】。最大磁盘大小默认为20GB，磁盘剩余空间较大的话该数值可以往上加。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953762472.jpg" alt="1704953762472"></p>
+<p>step14：点击【下一步】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953783085.jpg" alt="1704953783085"></p>
+<p>step15：点击【完成】。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953802118.jpg" alt="1704953802118"></p>
+<p>step16：安装</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704953828006.jpg" alt="1704953828006"></p>
+<p>step17：读条中</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954416367.jpg" alt="1704954416367"></p>
+<p>step18：安装结束后，登录并且进入系统，可以看到以下画</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954440004.jpg" alt="1704954440004"></p>
+<h3 id="安装VMTools-可能"><a href="#安装VMTools-可能" class="headerlink" title="安装VMTools(可能)"></a>安装VMTools(可能)</h3><p>打开终端【Ctrl+Shift+T】，找到刚解压的文件</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">cd</span> <span class="token attr-value">vmware-tools-distrib</span>
+ls
+<span class="token attr-name">sudo</span> <span class="token attr-value">./vmware-install.pl</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>手动输入一个yes，然后一路回车</p>
+<h3 id="Ubuntu屏幕小"><a href="#Ubuntu屏幕小" class="headerlink" title="Ubuntu屏幕小"></a>Ubuntu屏幕小</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">在初始安装的过程中，Ubuntu是固定在800x640的分辨率，用户可在安装完成后通过以下两种方法来更改分辨率
+
+	一、在系统设置中调节分辨率大小
+		【设置-&gt;显示-&gt;分辨率】选择合适的值
+
+<span class="token attr-name">    二、安装VMware</span> <span class="token attr-value">tools 【推荐】</span>
+    	(安装后，分辨率可自适应屏幕大小)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="设置服务器镜像源"><a href="#设置服务器镜像源" class="headerlink" title="设置服务器镜像源"></a>设置服务器镜像源</h3><h4 id="方式一-推荐"><a href="#方式一-推荐" class="headerlink" title="方式一(推荐)"></a>方式一(推荐)</h4><p>自动更新<code>/etc/apt/sources.list文件</code></p>
+<h5 id="修改系统设置"><a href="#修改系统设置" class="headerlink" title="修改系统设置"></a>修改系统设置</h5><ul>
+<li>Ubuntu 中 <strong>大部分</strong> 的软件 <strong>安装/更新</strong> 都是利用 <code>apt</code> 命令，从 <strong>ubuntu 的服务器</strong> 直接安装的</li>
+<li>Ubuntu <strong>官方的服务器在国外</strong>，为了提高软件 <strong>安装/更新速度</strong>，<strong>ubuntu</strong> 提供了 <strong>选择最佳服务器</strong> 的功能，可以帮助我们方便的找到一个速度最快的 <strong>镜像服务器</strong>！</li>
+</ul>
+<blockquote>
+<p>所谓 <strong>镜像服务器</strong>，就是 <strong>所有服务器的内容是相同的（镜像）</strong>，但是根据所在位置不同，速度不同，通常国内服务器速度会更快一些！</p>
+</blockquote>
+<p>按照以下步骤操作可以设置 ubuntu 的服务器</p>
+<ul>
+<li><p>进入 <strong>系统设置</strong></p>
+</li>
+<li><p>打开 <strong>软件和更新</strong></p>
+</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954468994.jpg" alt="1704954468994"></p>
+<ul>
+<li>设置 <strong>下载自…</strong> <strong>其他站点</strong></li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954493492.jpg" alt="1704954493492"></p>
+<ul>
+<li>通过 <strong>选择最佳服务器</strong> 选择速度最快的 <strong>镜像源</strong>，如下图所示：</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954519654.jpg" alt="1704954519654"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954543794.jpg" alt="1704954543794"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954565833.jpg" alt="1704954565833"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954586626.jpg" alt="1704954586626"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954606482.jpg" alt="1704954606482"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954634590.jpg" alt="1704954634590"></p>
+<blockquote>
+<p><strong>提示</strong>：更换服务器之后，需要一个相对比较长时间的更新过程，需要耐心等待。更新完成后，再安装软件都会从新设置的服务器下载软件了</p>
+</blockquote>
+<h4 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h4><h5 id="查找国内镜像源"><a href="#查找国内镜像源" class="headerlink" title="查找国内镜像源"></a>查找国内镜像源</h5><blockquote>
+<p>所谓的镜像源：可以理解为提供下载软件的地方，比如Android手机上可以下载软件的91手机助手；iOS手机上可以下载软件的AppStore</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/</a></li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954665439.jpg" alt="1704954665439"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954688898.jpg" alt="1704954688898"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954709273.jpg" alt="1704954709273"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954730039.jpg" alt="1704954730039"></p>
+<h5 id="备份默认源地址"><a href="#备份默认源地址" class="headerlink" title="备份默认源地址"></a>备份默认源地址</h5><ul>
+<li>修改方式一</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">cp /etc/apt/sources.list sources_bak.list</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>直接将文本中内容全部删去</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">echo</span> <span class="token attr-value">'' &gt; /etc/apt/sources.list</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>替换为下面内容</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token comment">#阿里云源</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://archive.ubuntu.com/ubuntu xenial main restricted</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial main restricted</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial main restricted multiverse universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted multiverse universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-updates universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial multiverse</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-updates multiverse</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://archive.canonical.com/ubuntu xenial partner</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://archive.canonical.com/ubuntu xenial partner</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted</span>
+<span class="token attr-name">deb-src</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted multiverse universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-security universe</span>
+<span class="token attr-name">deb</span> <span class="token attr-value">http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<ul>
+<li>修改方式二</li>
+</ul>
+<p>打开文件并修改，可以使用gedit打开该文本</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">gedit /etc/apt/sources.list</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704954981721.jpg" alt="1704954981721"></p>
+<h5 id="修改源服务器列表"><a href="#修改源服务器列表" class="headerlink" title="修改源服务器列表"></a>修改源服务器列表</h5><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955006939.jpg" alt="1704955006939"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955029635.jpg" alt="1704955029635"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955048705.jpg" alt="1704955048705"></p>
+<h5 id="更新源"><a href="#更新源" class="headerlink" title="更新源"></a>更新源</h5><p>做完此步骤之后，就可以进行 <code>apt-get install</code> 下载了</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955067237.jpg" alt="1704955067237"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955184128.jpg" alt="1704955184128"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955201834.jpg" alt="1704955201834"></p>
+<h3 id="设置语言环境"><a href="#设置语言环境" class="headerlink" title="设置语言环境"></a>设置语言环境</h3><p>按照以下步骤操作可以修改 ubuntu 的语言环境</p>
+<ul>
+<li><ol>
+<li>进入 <strong>系统设置 System Settings</strong></li>
+</ol>
+</li>
+<li><ol start="2">
+<li>打开 <strong>语言支持 Language Support</strong></li>
+</ol>
+</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955388501.jpg" alt="1704955388501"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955406497.jpg" alt="1704955406497"></p>
+<ul>
+<li><ol start="3">
+<li>通过 <strong>安装/删除语言 Install/Remove Languages</strong> 添加 <strong>简体中文 Chinese(simplified)</strong></li>
+</ol>
+</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955432228.jpg" alt="1704955432228"></p>
+<ul>
+<li><ol start="4">
+<li>将 <strong>汉语</strong> 拖拽到 <strong>顶部</strong>，如下图所示：</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955450749.jpg" alt="1704955450749"></p>
+<ul>
+<li><ol start="5">
+<li><strong>重新启动系统</strong></li>
+</ol>
+</li>
+<li><ol start="6">
+<li><strong>不</strong> 修改文件夹的名称，如下图所示：</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955470884.jpg" alt="1704955470884"></p>
+<h2 id="Ubuntu软件操作的相关命令"><a href="#Ubuntu软件操作的相关命令" class="headerlink" title="Ubuntu软件操作的相关命令"></a>Ubuntu软件操作的相关命令</h2><h3 id="给root用户设置密码"><a href="#给root用户设置密码" class="headerlink" title="给root用户设置密码"></a>给root用户设置密码</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">python@ubuntu</span><span class="token punctuation">:</span><span class="token attr-value">~$ sudo passwd root</span>
+<span class="token attr-name">[sudo]</span> <span class="token attr-value">python 的密码： </span>
+<span class="token attr-name">输入新的</span> <span class="token attr-value">UNIX 密码： </span>
+<span class="token attr-name">重新输入新的</span> <span class="token attr-value">UNIX 密码： </span>
+passwd：已成功更新密码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="apt-终端命令"><a href="#apt-终端命令" class="headerlink" title="apt 终端命令"></a>apt 终端命令</h3><ul>
+<li><code>apt</code> 是 <code>Advanced Packaging Tool</code>，是 Ubuntu 下的 <strong>安装包管理工具</strong></li>
+<li><strong>大部分</strong> 的软件 <strong>安装/更新/卸载</strong> 都是利用 <code>apt</code> 命令来实现的</li>
+<li>直接在终端中输入 <code>apt</code> 即可以查阅命令的帮助信息</li>
+<li>常用命令如下：</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/47262ce6e06e">apt 常用命令</a></p>
+<p>通常安装完 ubuntu 之后，可以先使用 <code>upgrade</code> 更新一下当前系统中可以升级的的软件包</p>
+<p><strong>提示</strong> 如果增加、更换了软件源，通常需要使用 <code>update</code> 更新一下本地缓存</p>
+<h3 id="更新源-1"><a href="#更新源-1" class="headerlink" title="更新源"></a>更新源</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt update</span>
+这个命令会访问源列表里的每个网址，并读取软件列表，然后保存在本地电脑。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="更新已安装的包"><a href="#更新已安装的包" class="headerlink" title="更新已安装的包"></a>更新已安装的包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt upgrade</span>
+这个命令会把本地已安装的软件，与刚下载的软件列表里对应软件进行对比，如果发现已安装的软件版本太低，就会提示更新。
+
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt-get dselect-upgrade # 使用dselect升级</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="清理无用的包"><a href="#清理无用的包" class="headerlink" title="清理无用的包"></a>清理无用的包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt clean &amp;&amp; sudo apt autoclean </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="搜索软件包"><a href="#搜索软件包" class="headerlink" title="搜索软件包"></a>搜索软件包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-cache search package </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="获取包的相关信息，如说明、大小、版本等"><a href="#获取包的相关信息，如说明、大小、版本等" class="headerlink" title="获取包的相关信息，如说明、大小、版本等"></a>获取包的相关信息，如说明、大小、版本等</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-cache show package  </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install package </span>
+
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt-get install package=version # 安装制定版本的包</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="修复安装"><a href="#修复安装" class="headerlink" title="修复安装"></a>修复安装</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt -f install   </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="重新安装包"><a href="#重新安装包" class="headerlink" title="重新安装包"></a>重新安装包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install package --reinstall   </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="下载该包的源代码"><a href="#下载该包的源代码" class="headerlink" title="下载该包的源代码"></a>下载该包的源代码</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt source package  </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="了解使用该包依赖那些包"><a href="#了解使用该包依赖那些包" class="headerlink" title="了解使用该包依赖那些包"></a>了解使用该包依赖那些包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-cache depends package </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="查看该包被哪些包依赖"><a href="#查看该包被哪些包依赖" class="headerlink" title="查看该包被哪些包依赖"></a>查看该包被哪些包依赖</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-cache rdepends package </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="检查是否有损坏的依赖"><a href="#检查是否有损坏的依赖" class="headerlink" title="检查是否有损坏的依赖"></a>检查是否有损坏的依赖</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-get check</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="删除包"><a href="#删除包" class="headerlink" title="删除包"></a>删除包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt remove package </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="删除包，包括配置文件等"><a href="#删除包，包括配置文件等" class="headerlink" title="删除包，包括配置文件等"></a>删除包，包括配置文件等</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt remove package --purge </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="安装相关的编译环境"><a href="#安装相关的编译环境" class="headerlink" title="安装相关的编译环境"></a>安装相关的编译环境</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-get build-dep package</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt dist-upgrade </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<blockquote>
+<h2 id="使用第三方工具检查依赖关系"><a href="#使用第三方工具检查依赖关系" class="headerlink" title="使用第三方工具检查依赖关系"></a>使用第三方工具检查依赖关系</h2><p>如果想使用第三方工具检查 Ubuntu 中软件包的依赖关系，<strong>apt-rdepends</strong> 是一个不错的选择。要安装此工具，请执行下面的命令：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install apt-rdepends -y</span>
+
+使用以下语法检查包依赖关系
+<span class="token attr-name">apt-rdepends</span> <span class="token attr-value">&lt;Package_name&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h3 id="安装常用软件"><a href="#安装常用软件" class="headerlink" title="安装常用软件"></a>安装常用软件</h3><ul>
+<li>设置服务器镜像源</li>
+<li>在启动栏添加 <strong>终端</strong> 图标</li>
+<li><strong>apt</strong> 终端命令</li>
+<li>谷歌浏览器 chrome</li>
+<li>搜狗输入法</li>
+</ul>
+<h4 id="安装常用工具"><a href="#安装常用工具" class="headerlink" title="安装常用工具"></a>安装常用工具</h4><p><strong>提示</strong> apt 安装命令的格式是不需要记忆的，如果在终端中输入的软件没有安装，系统会提示 <strong>apt 命令</strong> 的使用格式</p>
+<h5 id="curl工具"><a href="#curl工具" class="headerlink" title="curl工具"></a>curl工具</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install curl -y</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="vim工具"><a href="#vim工具" class="headerlink" title="vim工具"></a>vim工具</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install vim -y</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="git工具"><a href="#git工具" class="headerlink" title="git工具"></a>git工具</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install git</span>
+
+<span class="token attr-name">git</span> <span class="token attr-value">version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>配置.gitconfig</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">vim</span> <span class="token attr-value">.gitconfig</span>
+
+[user]
+<span class="token attr-name">	name</span> <span class="token punctuation">=</span> <span class="token attr-value">caifa.liu</span>
+<span class="token attr-name">	email</span> <span class="token punctuation">=</span> <span class="token attr-value">caifa.liu@gmail.com</span>
+[http]
+<span class="token attr-name">	postBuffer</span> <span class="token punctuation">=</span> <span class="token attr-value">524288000</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token comment"># Compiled class file</span>
+*.class
+<span class="token comment"># Log file</span>
+*.log
+<span class="token comment"># BlueJ files</span>
+*.ctxt
+<span class="token comment"># Mobile Tools for Java (J2ME)</span>
+.mtj.tmp/
+<span class="token comment"># Package Files #</span>
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+<span class="token comment">#  virtual  machine  crash  logs,  see</span>
+<span class="token attr-name">http</span><span class="token punctuation">:</span><span class="token attr-value">//www.java.com/en/download/help/error_hotspot.xml</span>
+hs_err_pid*
+.classpath
+.project
+.settings
+target
+*.idea
+*.iml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="python-程序员"><a href="#python-程序员" class="headerlink" title="python 程序员"></a>python 程序员</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install ipython</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install ipython3</span>
+
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install python-pip</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install python3-pip</span>
+
+<span class="token comment"># 不推荐使用(容易导致 pip 出问题)</span>
+<span class="token attr-name">pip</span> <span class="token attr-value">install --upgrade pip</span>
+
+<span class="token comment"># 推荐使用 get-pip.py 脚本</span>
+<span class="token attr-name">wget</span> <span class="token attr-value">https://bootstrap.pypa.io/get-pip.py # 下载最新版</span>
+<span class="token attr-name">wget</span> <span class="token attr-value">https://bootstrap.pypa.io/pip/3.8/get-pip.py # 下载3.8版</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">python3 get-pip.py</span>
+
+或
+<span class="token attr-name">https</span><span class="token punctuation">:</span><span class="token attr-value">//pypi.org/project/pip/#files</span>
+
+<span class="token attr-name">方案</span><span class="token punctuation">:</span>
+<span class="token attr-name">https</span><span class="token punctuation">:</span><span class="token attr-value">//blog.csdn.net/qq_42257666/article/details/117884849</span>
+<span class="token attr-name">https</span><span class="token punctuation">:</span><span class="token attr-value">//blog.csdn.net/weixin_66337429/article/details/127759593</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="存储虚拟环境中的包"><a href="#存储虚拟环境中的包" class="headerlink" title="存储虚拟环境中的包"></a>存储虚拟环境中的包</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">python</span> <span class="token attr-value">3版本开发 我们的课程基于Python2.7，因为很多第三方库还没有过度到python3系列。 创建python3的虚拟开发环境</span>
+<span class="token attr-name">mkvirtualenv</span> <span class="token attr-value">-p /usr/bin/python3.4 py3</span>
+使用python3.4+django1.9.4环境，你应该安装如下环境：
+<span class="token attr-name">(py3)python@ubuntu</span><span class="token punctuation">:</span><span class="token attr-value">~$ pip freeze list</span>
+<span class="token attr-name">pip</span><span class="token punctuation">=</span><span class="token attr-value">=8.1.0</span>
+<span class="token attr-name">Django</span><span class="token punctuation">=</span><span class="token attr-value">=1.9.4</span>
+<span class="token attr-name">ipdb</span><span class="token punctuation">=</span><span class="token attr-value">=0.8.1</span>
+<span class="token attr-name">ipython</span><span class="token punctuation">=</span><span class="token attr-value">=4.1.2</span>
+<span class="token attr-name">Pillow</span><span class="token punctuation">=</span><span class="token attr-value">=2.8.2</span>
+
+<span class="token attr-name">把以上包名存储到package_py3.txt，在你的python虚拟环境中，运行</span><span class="token punctuation">:</span>
+<span class="token attr-name">pip</span> <span class="token attr-value">install -r package_py3.txt</span>
+
+<span class="token attr-name">pip命令速查</span> <span class="token attr-value">查看已安装的包</span>
+<span class="token attr-name">pip</span> <span class="token attr-value">show --files SomePackage</span>
+
+检查哪些包需要更新
+<span class="token attr-name">pip</span> <span class="token attr-value">list --outdated</span>
+
+升级包
+<span class="token attr-name">pip</span> <span class="token attr-value">install --upgrade SomePackage</span>
+
+卸载包
+<span class="token attr-name">pip</span> <span class="token attr-value">uninstall SomePackage</span>
+
+参数解释
+<span class="token attr-name">pip</span> <span class="token attr-value">--help</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="安装导出的包"><a href="#安装导出的包" class="headerlink" title="安装导出的包"></a>安装导出的包</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">pip3</span> <span class="token attr-value">install -r package_py3.txt</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p><strong>注意:</strong></p>
+<blockquote>
+<p>Ubuntu中使用pip安装包不加<code>sudo</code>, 默认安装到用户家目录的<code>.local</code>文件夹中</p>
+<p>加<code>sudo</code>后安装到<code>/usr/local/lib/python3.8</code>(python安装的文件夹)</p>
+</blockquote>
+<h5 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h5><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955530099.jpg" alt="1704955530099"></p>
+<p>之前安装python包的命令： <strong>sudo</strong> <code>pip3 install</code> 包名<br>包的安装路径：<code>/usr/local/lib/python3.8/dist-packages</code><br>安装同一个包的不同版本，后安装的包会把原来安装的包覆盖掉。这样，如同一台机器上两个项目依赖于相同包的不同版本，则会导致一些项目运行失败。<br>解决的方案就是：虚拟环境。<br>虚拟环境是真实python环境的复制版本。</p>
+<p>安装虚拟环境的命令：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token comment"># 安装虚拟环境</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">pip3 install virtualenv </span>
+
+<span class="token comment"># 安装虚拟环境扩展包</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">pip3 install virtualenvwrapper </span>
+
+另一种方式
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt-get install python-virtualenv</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">easy_install virtualenvwrapper</span>
+上述工具装好后找不到mkvirtualenv命令，需要执行以下环境变量设置。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>编辑家目录下面的.bashrc文件，添加下面两行。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">WORKON_HOME</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/.virtualenvs
+<span class="token builtin class-name">source</span> /usr/local/bin/virtualenvwrapper.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cpl9412290130/p/10019231.html">virtualenvwrapper.sh报错解决</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44739762/article/details/101000104">https://blog.csdn.net/qq_44739762/article/details/101000104</a></p>
+<p>刷新环境使其生效</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">source</span> <span class="token attr-value">.bashrc</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>创建虚拟环境命令：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">mkvirtualenv</span> <span class="token attr-value">虚拟环境名</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>创建python3虚拟环境：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">mkvirtualenv</span> <span class="token attr-value">-p python3 pythonvirenv</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>进入虚拟环境工作：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">workon</span> <span class="token attr-value">虚拟环境名</span>
+
+查看机器上有多少个虚拟环境
+<span class="token attr-name">workon</span> <span class="token attr-value">空格 + 两个tab键</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>退出虚拟环境：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">deactivate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>删除虚拟环境：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">rmvirtualenv</span> <span class="token attr-value">虚拟环境名</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>虚拟环境下安装包的命令：<br>pip install 包名</p>
+<blockquote>
+<p>注意：不能使用 <code>sudo pip install 包名</code>，这个命令<strong>会把包安装到真实的主机环境</strong>上而不是安装到虚拟环境中。</p>
+<p>apt-get install 软件<br>pip install python 包名</p>
+</blockquote>
+<p>举例:</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">安装django环境：
+<span class="token attr-name">pip</span> <span class="token attr-value">install django==1.8.2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>查看虚拟环境中安装了哪些python包：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">pip</span> <span class="token attr-value">list</span>
+
+<span class="token attr-name">pip</span> <span class="token attr-value">freeze</span>
+<span class="token attr-name">pip</span> <span class="token attr-value">freeze list</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="C-程序员"><a href="#C-程序员" class="headerlink" title="C++ 程序员"></a>C++ 程序员</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install cmake</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install qtcreator  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="ruby-程序员"><a href="#ruby-程序员" class="headerlink" title="ruby 程序员"></a>ruby 程序员</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install ruby</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="安装-ssh-服务器"><a href="#安装-ssh-服务器" class="headerlink" title="安装 ssh 服务器"></a>安装 ssh 服务器</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install openssh-server -y</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装之后，才可以在其他系统中，通过 ssh 工具远程登陆</p>
+<h5 id="安装-net-tools"><a href="#安装-net-tools" class="headerlink" title="安装 net-tools"></a>安装 net-tools</h5><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install net-tools -y</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h4 id="删除不使用的软件"><a href="#删除不使用的软件" class="headerlink" title="删除不使用的软件"></a>删除不使用的软件</h4><p><strong>libreoffice</strong></p>
+<ul>
+<li><code>libreoffice</code> 是一套类似于 <code>微软 Office</code> 的 <strong>免费的</strong> 办公套件</li>
+<li>不过无论是界面交互还是执行性能都还有很大的提升空间</li>
+<li>卸载 libreoffice 可以释放大概 <strong>300M</strong> 的磁盘空间</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt remove libreoffice-common --purge</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>Amazon</strong></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt remove unity-webapps-common --purge</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h4 id="扩展：apt-和-apt-get"><a href="#扩展：apt-和-apt-get" class="headerlink" title="扩展：apt 和 apt-get"></a>扩展：<code>apt</code> 和 <code>apt-get</code></h4><ul>
+<li><code>apt</code> 和 <code>apt-get</code> 都是 ubuntu 下常用的安装软件的命令</li>
+<li><strong>早期</strong> 使用 <code>apt-get</code>，从 ununtu 16 开始，官方建议使用 <code>apt</code></li>
+<li>这两个命令的 <strong>使用方式非常类似</strong></li>
+</ul>
+<h4 id="deb-文件格式安装"><a href="#deb-文件格式安装" class="headerlink" title="deb 文件格式安装"></a>deb 文件格式安装</h4><p><strong>deb</strong> 是 Debian Linux 的安装格式，在 ubuntu 中同样可以使用。要安装 deb 安装包，需要使用 <code>dpkg</code> 这个终端命令，命令格式如下：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">dpkg -i &lt;package.deb&gt;</span>
+
+<span class="token attr-name">检查</span> <span class="token attr-value">deb 包的依赖关系，需要使用以下命令</span>
+<span class="token attr-name">dpkg</span> <span class="token attr-value">--info &lt; path_of_deb_file &gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="deb-文件格式卸载"><a href="#deb-文件格式卸载" class="headerlink" title="deb 文件格式卸载"></a>deb 文件格式卸载</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">dpkg –r 安装包名</span>
+
+<span class="token attr-name">-r</span> <span class="token attr-value">选项表示安装的卸载</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="谷歌浏览器"><a href="#谷歌浏览器" class="headerlink" title="谷歌浏览器"></a>谷歌浏览器</h4><ol>
+<li>从 <a target="_blank" rel="noopener" href="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</a> 下载最新版本的安装文件</li>
+<li>在终端中执行以下命令：</li>
+</ol>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install libappindicator1 libindicator7</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">dpkg -i google-chrome-stable_current_amd64.deb   </span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt -f install </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h4><p><strong>fcitx</strong> 被称为 <strong>小企鹅输入法</strong>，是一个以 GPL 方式发布的 <strong>输入法平台</strong>，可以通过安装引擎支持多种输入法。它的优点是，短小精悍、跟程序的兼容性比较好！</p>
+<ol>
+<li>打开 <strong>系统设置</strong> <strong>语言支持</strong><ul>
+<li>将 <strong>键盘输入法系统</strong> 修改为 <strong>fcitx</strong>  <a target="_blank" rel="noopener" href="https://shurufa.sogou.com/linux/guide">https://shurufa.sogou.com/linux/guide</a></li>
+</ul>
+</li>
+<li>访问网站 <a target="_blank" rel="noopener" href="http://pinyin.sogou.com/linux/">http://pinyin.sogou.com/linux/</a> 下载最新版本的安装文件</li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ime-sec.gtimg.com/202303170115/6d0121c428080a16f22297b3b7da51b3/pc/dl/gzindex/1656597217/sogoupinyin_4.0.1.2800_x86_64.deb">https://ime-sec.gtimg.com/202303170115/6d0121c428080a16f22297b3b7da51b3/pc/dl/gzindex/1656597217/sogoupinyin_4.0.1.2800_x86_64.deb</a></li>
+</ul>
+<ol>
+<li>在终端中执行以下命令：</li>
+</ol>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">Ubuntu20.04安装搜狗输入法步骤
+
+1.更新源
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt update</span>
+
+2.安装fcitx输入法框架
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install fcitx</span>
+
+3.设置fcitx为系统输入法
+点击左下角菜单选择语言支持，将语言选择为fcitx
+
+4.设置fcitx开机自启动
+<span class="token attr-name">sudo</span> <span class="token attr-value">cp /usr/share/applications/fcitx.desktop /etc/xdg/autostart/</span>
+
+5.卸载系统ibus输入法框架
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt purge ibus</span>
+
+6.安装输入法依赖
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install libgsettings-qt1</span>
+
+7.安装搜狗输入法
+<span class="token attr-name">sudo</span> <span class="token attr-value">dpkg -i sogoupinyin_2.1.0.0086_amd64.deb</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt -f install</span>
+
+8.重启电脑、调出输入法<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>提示: 安装输入法之后，需要重新启动系统</p>
+</blockquote>
+<h4 id="Notepad"><a href="#Notepad" class="headerlink" title="Notepad++"></a>Notepad++</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">snap install notepad-plus-plus</span>
+<span class="token attr-name">sudo</span> <span class="token attr-value">snap remove notepad-plus-plus</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.likecs.com/show-308539908.html">https://www.likecs.com/show-308539908.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.muzhuangnet.com/show/89209.html">https://www.muzhuangnet.com/show/89209.html</a></p>
+</blockquote>
+<h4 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">wget</span> <span class="token attr-value">https://download.jetbrains.com/python/pycharm-professional-2019.3.5.tar.gz</span>
+
+<span class="token attr-name">wget</span> <span class="token attr-value">https://download.jetbrains.com/python/pycharm-professional-2021.2.2.tar.gz</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46128755/article/details/126949282">https://blog.csdn.net/weixin_46128755/article/details/126949282</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/haima/p/11235640.html">https://www.cnblogs.com/haima/p/11235640.html</a></p>
+</blockquote>
+<h4 id="mNetAssist"><a href="#mNetAssist" class="headerlink" title="mNetAssist"></a>mNetAssist</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/GritYearner/article/details/122904663">https://blog.csdn.net/GritYearner/article/details/122904663</a></p>
+</blockquote>
+<h3 id="在启动栏添加-终端-图标"><a href="#在启动栏添加-终端-图标" class="headerlink" title="在启动栏添加 终端 图标"></a>在启动栏添加 <strong>终端</strong> 图标</h3><ul>
+<li>Ubuntu 的 <strong>启动栏</strong> 类似于 Windows 的 <strong>任务栏</strong>，可以显示 <strong>常用软件图标</strong> 和 <strong>正在运行的软件图标</strong></li>
+<li>通常 Linux 的用户使用 <strong>终端命令</strong> 的频率非常高，所以会把 <strong>终端</strong> 添加到 <strong>启动栏</strong></li>
+<li>通过最上方的 <strong>搜索</strong> 按钮可以 <strong>搜索并启动</strong> 需要使用的程序</li>
+<li><strong>点击右键</strong> 可以 <strong>保留</strong>、<strong>删除</strong> 或者 <strong>移动</strong> 启动栏中图标</li>
+<li>可以把最常用的软件图标，<strong>保留</strong> 在启动栏，可以方便快速启动程序</li>
+</ul>
+<h2 id="常用服务器"><a href="#常用服务器" class="headerlink" title="常用服务器"></a>常用服务器</h2><h3 id="mysql服务器"><a href="#mysql服务器" class="headerlink" title="mysql服务器"></a>mysql服务器</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/liuhuango123/article/details/128264867">Ubuntu20.04安装MySQL5.7</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Best-Shu/p/14957722.html">Ubuntu20.04下MySQL8.0修改root密码</a></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt update</span>
+
+<span class="token attr-name">sudo</span> <span class="token attr-value">apt install mysql-server</span>
+<span class="token comment"># sudo apt install libmysqlclient-dev</span>
+
+<span class="token attr-name">service</span> <span class="token attr-value">mysql stop</span>
+<span class="token attr-name">service</span> <span class="token attr-value">mysql start</span>
+
+<span class="token attr-name">systemctl</span> <span class="token attr-value">mysql stop</span>
+<span class="token attr-name">systemctl</span> <span class="token attr-value">mysql start</span>
+
+<span class="token attr-name">sudo</span> <span class="token attr-value">netstat -tap | grep mysql</span>
+
+进入超级用户进行相关操作
+<span class="token attr-name">mysql</span> <span class="token attr-value">-u root -p</span>
+
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">show variables like 'char%';</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">set character_set_database=utf8;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">set character_set_server=utf8;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">show variables like 'char%';</span>
+
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">show databases;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">use mysql;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">show tables;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">select * from user;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">select user, host from user;</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">update user set host="%" where user="root";</span>
+
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">flush privileges;</span>
+
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">quit;</span>
+
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">show variables like 'version';</span>
+<span class="token attr-name">mysql&gt;</span> <span class="token attr-value">select version();</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="redis服务器"><a href="#redis服务器" class="headerlink" title="redis服务器"></a>redis服务器</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-get install redis-server</span>
+通过redis-cli登入<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="elasticsearch安装"><a href="#elasticsearch安装" class="headerlink" title="elasticsearch安装"></a>elasticsearch安装</h3><ul>
+<li>django项目使用</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-get install elasticsearch</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="mongoDB安装"><a href="#mongoDB安装" class="headerlink" title="mongoDB安装"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/zgf19930504/article/details/52045600">mongoDB安装</a></h3><h3 id="其它依赖包"><a href="#其它依赖包" class="headerlink" title="其它依赖包"></a>其它依赖包</h3><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install python-dev</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="ftp服务器"><a href="#ftp服务器" class="headerlink" title="ftp服务器"></a>ftp服务器</h3><p>FTP 是File Transfer Protocol（文件传输协议）的英文简称，而中文简称为“文传协议”。</p>
+<p>用于Internet上的控制文件的双向传输。</p>
+<p>同时，它也是一个应用程序（Application）。基于不同的操作系统有不同的FTP应用程序，而所有这些应用程序都遵守同一种协议以传输文件。</p>
+<p>在FTP的使用当中，用户经常遇到两个概念：”下载”（Download）和”上传”（Upload）。</p>
+<p>“下载”文件就是从远程主机拷贝文件至自己的计算机上；</p>
+<p>“上传”文件就是将文件从自己的计算机中拷贝至远程主机上。用Internet语言来说，用户可通过客户机程序向（从）远程主机上传（下载）文件。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955804321.jpg" alt="1704955804321"></p>
+<h4 id="安装vsftpd服务器"><a href="#安装vsftpd服务器" class="headerlink" title="安装vsftpd服务器"></a>安装vsftpd服务器</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt-get install vsftpd</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955833679.jpg" alt="1704955833679"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955849328.jpg" alt="1704955849328"></p>
+<h4 id="配置vsftpd-conf文件"><a href="#配置vsftpd-conf文件" class="headerlink" title="配置vsftpd.conf文件"></a>配置vsftpd.conf文件</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">vi /etc/vsftpd.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955866388.jpg" alt="1704955866388"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955883967.jpg" alt="1704955883967"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955904183.jpg" alt="1704955904183"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955922140.jpg" alt="1704955922140"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955940334.jpg" alt="1704955940334"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955956487.jpg" alt="1704955956487"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955974129.jpg" alt="1704955974129"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704955992396.jpg" alt="1704955992396"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956013819.jpg" alt="1704956013819"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956030485.jpg" alt="1704956030485"></p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956047164.jpg" alt="1704956047164"></p>
+<h4 id="测试上传功能，登陆ftp服务器"><a href="#测试上传功能，登陆ftp服务器" class="headerlink" title="测试上传功能，登陆ftp服务器"></a>测试上传功能，登陆ftp服务器</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">ftp</span> <span class="token attr-value"> IP</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956064256.jpg" alt="1704956064256"></p>
+<h4 id="上传命令，可以把文件上传到ftp服务器"><a href="#上传命令，可以把文件上传到ftp服务器" class="headerlink" title="上传命令，可以把文件上传到ftp服务器"></a>上传命令，可以把文件上传到ftp服务器</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">put</span> <span class="token attr-value">somefile</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h4 id="下载命令，可以把ftp服务器上的文件下载到本地"><a href="#下载命令，可以把ftp服务器上的文件下载到本地" class="headerlink" title="下载命令，可以把ftp服务器上的文件下载到本地"></a>下载命令，可以把ftp服务器上的文件下载到本地</h4><pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">get</span> <span class="token attr-value">somefile</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h4 id="图形界面的ftp客户端-filezilla"><a href="#图形界面的ftp客户端-filezilla" class="headerlink" title="图形界面的ftp客户端(filezilla)"></a>图形界面的ftp客户端(filezilla)</h4><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956080772.jpg" alt="1704956080772"></p>
+<h3 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h3><h4 id="ssh介绍"><a href="#ssh介绍" class="headerlink" title="ssh介绍"></a>ssh介绍</h4><p>SSH为Secure Shell的缩写，由 IETF 的网络工作小组（Network Working Group）所制定；SSH 为建立在应用层和传输层基础上的安全协议。</p>
+<p>SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。常用于远程登录，以及用户之间进行资料拷贝。</p>
+<p>利用SSH协议可以有效防止远程管理过程中的信息泄露问题。SSH最初是 UNIX 系统上的一个程序，后来又迅速扩展到其他操作平台。SSH 在正确使用时可弥补网络中的漏洞。SSH 客户端适用于多种平台。几乎所有 UNIX 平台—包括 HP-UX、Linux、AIX、Solaris、Digital UNIX、Irix，以及其他平台，都可运行SSH。</p>
+<p>使用SSH服务，需要安装相应的服务器和客户端。客户端和服务器的关系：如果，A机器想被B机器远程控制，那么，A机器需要安装SSH服务器，B机器需要安装SSH客户端。</p>
+<h4 id="安装ssh"><a href="#安装ssh" class="headerlink" title="安装ssh"></a>安装ssh</h4><p>安装ssh服务器</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">sudo</span> <span class="token attr-value">apt install openssh-server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>远程登陆</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">ssh</span> <span class="token attr-value">用户名@IP</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>使用ssh访问，如访问出现错误。可查看是否有该文件 <code>～/.ssh/known_ssh</code> 尝试删除该文件解决。</p>
+<h4 id="使用ssh连接服务器"><a href="#使用ssh连接服务器" class="headerlink" title="使用ssh连接服务器"></a>使用ssh连接服务器</h4><p>SSH 告知用户，这个主机不能识别，这时键入”yes”，SSH 就会将相关信息，写入” ~/.ssh/know_hosts” 中，再次访问，就不会有这些信息了。然后输入完口令,就可以登录到主机了。</p>
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956098469.jpg" alt="1704956098469"></p>
+<h3 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h3><p>远程拷贝文件,<code>scp -r</code> 的常用方法：</p>
+<p>使用该命令的前提条件要求目标主机已经成功安装 <code>openssh-server</code></p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">如没有安装使用</span> <span class="token attr-value">sudo apt install openssh-server 来安装</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>使用格式：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">scp</span> <span class="token attr-value">-r 目标用户名@目标主机IP地址：/目标文件的绝对路径  /保存到本机的绝对/相对路径</span>
+
+举例：
+<span class="token attr-name">scp</span> <span class="token attr-value">-r python@192.168.10.100:/home/python/QQ_dir/ ./mytest/lisi</span>
+
+在后续会提示输入“yes”此时，只能输“yes”而不能简单输入“Y”<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>拷贝单个文件可以不加 <code>-r</code> 参数，拷贝目录必须要加。</p>
+<p>本地文件复制到远程：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">scp</span> <span class="token attr-value">FileName RemoteUserName@RemoteHostIp:RemoteFile</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">FileName RemoteHostIp:RemoteFolder</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">FileName RemoteHostIp:RemoteFile</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>本地目录复制到远程：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">scp</span> <span class="token attr-value">-r FolderName RemoteUserName@RemoteHostIp:RemoteFolder</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">-r FolderName RemoteHostIp:RemoteFolder</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>远程文件复制到本地：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">scp</span> <span class="token attr-value">RemoteUserName@RemoteHostIp:RemoteFile FileName</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">RemoteHostIp:RemoteFolder FileName</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">RemoteHostIp:RemoteFile FileName</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>远程目录复制到本地：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">scp</span> <span class="token attr-value">-r RemoteUserName@RemoteHostIp:RemoteFolder FolderName</span>
+<span class="token attr-name">scp</span> <span class="token attr-value">-r RemoteHostIp:RemoteFolder FolderName</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704956117609.jpg" alt="1704956117609"></p>
+<h2 id="惨痛经历"><a href="#惨痛经历" class="headerlink" title="惨痛经历"></a><strong>惨痛经历</strong></h2><blockquote>
+<p>Ubuntu系统下不要轻易卸载系统自带的python（2.7、3.5），因为Ubuntu依赖python环境。</p>
+</blockquote>
+<p>卸载python3.5（作死）</p>
+<blockquote>
+<p>sudo apt-get remove python3.5 # <code>卸载python3.5</code> </p>
+<p>sudo apt-get remove –auto-remove python3.5 # <code>卸载python3.5及其依赖</code> </p>
+<p>sudo apt-get purge python3.5 或 sudo apt-get purge –auto-remove python3.5 # <code>清除python3.5</code></p>
+</blockquote>
+<p><strong>后果</strong>：第一条命令之后</p>
+<ol>
+<li>桌面的图标一个一个消失…刚开始我还以为眼花了，什么东西闪了一下</li>
+<li>桌面一些图标变灰…</li>
+</ol>
+<p>​     意识到不对劲，我赶紧终止…然…（炸了，重装系统了）</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">mlwtools</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://mlwtools.cloudns.biz/2024/01/02/02.gong-ju/ubuntu-an-zhuang-pei-zhi-jiao-cheng/ubuntu-an-zhuang-pei-zhi-jiao-cheng/">https://mlwtools.cloudns.biz/2024/01/02/02.gong-ju/ubuntu-an-zhuang-pei-zhi-jiao-cheng/ubuntu-an-zhuang-pei-zhi-jiao-cheng/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">mlwtools</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/software/">
+                                    <span class="chip bg-color">software</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,twitter,facebook,google,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://mlwtools.github.io/picx-images-hosting/20240118/1705551743009.webp" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://mlwtools.github.io/picx-images-hosting/20240118/1705551743015.webp" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NTY4Ny8zMjE1NA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/01/03/02.gong-ju/nodejs-an-zhuang-pei-zhi-jiao-cheng/nodejs-an-zhuang-pei-zhi-jiao-cheng/">
+                    <div class="card-image">
+                        
+                        <img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704985352243.jpg" class="responsive-img" alt="NodeJs安装配置教程">
+                        
+                        <span class="card-title">NodeJs安装配置教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            NodeJs安装配置教程。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/NodeJs/">
+                        <span class="chip bg-color">NodeJs</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/01/01/02.gong-ju/ruan-jian-tui-jian/ruan-jian-tui-jian/">
+                    <div class="card-image">
+                        
+                        <img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704766652741.jpg" class="responsive-img" alt="软件推荐">
+                        
+                        <span class="card-title">软件推荐</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            各种好用的软件整理、归类、推荐
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/software/">
+                        <span class="chip bg-color">software</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2024</span>
+            
+            <span id="year">2024</span>
+            <a href="/about" target="_blank">mlwtools</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">32.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2024";
+                    var startMonth = "1";
+                    var startDate = "1";
+                    var startHour = "8";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.beian.miit.gov.cn/" target="_blank">闽ICP备689869号-1</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/mlwtools/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2038307024@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2038307024" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2038307024" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="2038307024" class="tooltipped" target="_blank" data-tooltip="关注我的微博: 2038307024" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+<!-- 深色模式按钮 -->
+    <script>
+        if (localStorage.getItem('dark') === '1') {
+        document.body.classList.add('dark');
+        }
+        else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
+        document.body.classList.add('dark');
+        } 
+        else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+        }
+    </script>
+    <a onclick="switchNightMode()" id="sma">
+        <i class="fas fa-lightbulb" id="nightMode" aria-hidden="true"></i>
+    </a>
+
+    <!-- 天气接口控件   -->
+    
+        <script type="text/javascript">
+        WIDGET = {FID: 'zLkJSQpqsh'}
+        </script>
+    <!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      if (windowWidth > 768) {
+          document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+      }
+    </script>
+    
+
+    
+
+	
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
