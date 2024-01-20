@@ -755,43 +755,43 @@
 <p><img src="https://mlwtools.github.io/picx-images-hosting/20240117/1705494263559.webp" alt="1705494263559"></p>
 </li>
 </ul>
-<h4 id="4-2-查看版本库状态"><a href="#4-2-查看版本库状态" class="headerlink" title="4.2 查看版本库状态"></a>4.2 查看版本库状态</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git status<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="4-2-查看版本库状态"><a href="#4-2-查看版本库状态" class="headerlink" title="4.2 查看版本库状态"></a>4.2 查看版本库状态</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> status<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="4-3-将工作空间的修改添加到暂存区"><a href="#4-3-将工作空间的修改添加到暂存区" class="headerlink" title="4.3 将工作空间的修改添加到暂存区"></a>4.3 将工作空间的修改添加到暂存区</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git add a.txt   ## 只将工作空间中的某个文件add到暂存区
-git add .       ## 将工作空间中所有文件都add暂存区<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="4-3-将工作空间的修改添加到暂存区"><a href="#4-3-将工作空间的修改添加到暂存区" class="headerlink" title="4.3 将工作空间的修改添加到暂存区"></a>4.3 将工作空间的修改添加到暂存区</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">add</span> a.txt   <span class="token comment">## 只将工作空间中的某个文件add到暂存区</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>       <span class="token comment">## 将工作空间中所有文件都add暂存区</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="4-4-将暂存区内容提交到版本库（仓库）"><a href="#4-4-将暂存区内容提交到版本库（仓库）" class="headerlink" title="4.4 将暂存区内容提交到版本库（仓库）"></a>4.4 将暂存区内容提交到版本库（仓库）</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git commit -m '版本说明'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="4-4-将暂存区内容提交到版本库（仓库）"><a href="#4-4-将暂存区内容提交到版本库（仓库）" class="headerlink" title="4.4 将暂存区内容提交到版本库（仓库）"></a>4.4 将暂存区内容提交到版本库（仓库）</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> commit -m <span class="token string">'版本说明'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="4-5-查看版本库中的历史版本"><a href="#4-5-查看版本库中的历史版本" class="headerlink" title="4.5 查看版本库中的历史版本"></a>4.5 查看版本库中的历史版本</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git log --oneline  ## 每个版本信息只显示一行
-get log            ## 显示每个版本的详细信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="4-5-查看版本库中的历史版本"><a href="#4-5-查看版本库中的历史版本" class="headerlink" title="4.5 查看版本库中的历史版本"></a>4.5 查看版本库中的历史版本</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> log --oneline  <span class="token comment">## 每个版本信息只显示一行</span>
+get log            <span class="token comment">## 显示每个版本的详细信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="4-6-设置用户信息"><a href="#4-6-设置用户信息" class="headerlink" title="4.6 设置用户信息"></a>4.6 设置用户信息</h4><blockquote>
 <p>因为我们将暂存区的内容提交到版本时，会记录当前版本的提交的用户信息，因此在版本提交之前需要先绑定用户信息</p>
 </blockquote>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git config --global user.name 'ergou'
-git config --global user.email 'haha@hehe.com'
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> config --global user.name <span class="token string">'ergou'</span>
+<span class="token function">git</span> config --global user.email <span class="token string">'haha@hehe.com'</span>
 
-git config --global user.name 'itcoder'
-git config --global user.email 'itcoder@gmail.com'
+<span class="token function">git</span> config --global user.name <span class="token string">'itcoder'</span>
+<span class="token function">git</span> config --global user.email <span class="token string">'itcoder@gmail.com'</span>
 永久存储秘钥
-git config --global credential.helper store 
+<span class="token function">git</span> config --global credential.helper store 
 查看配置信息
-git config --list
+<span class="token function">git</span> config --list
 
 生成公秘钥
-ssh-keygen -t rsa -C "itcoder@gmail.com"
-ssh-keygen -t ed25519 -C "itcoder@gmail.com"
+ssh-keygen -t rsa -C <span class="token string">"itcoder@gmail.com"</span>
+ssh-keygen -t ed25519 -C <span class="token string">"itcoder@gmail.com"</span>
 
 转换换行符
-git config --global core.autocrlf false
-git config --global core.autocrlf true
-git rm -r --cached 
+<span class="token function">git</span> config --global core.autocrlf <span class="token boolean">false</span>
+<span class="token function">git</span> config --global core.autocrlf <span class="token boolean">true</span>
+<span class="token function">git</span> <span class="token function">rm</span> -r --cached 
 
 代理
-git config --global http.proxy "socks://127.0.0.1:7890"
-git config --global https.proxy "socks://127.0.0.1:7890"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">git</span> config --global http.proxy <span class="token string">"socks://127.0.0.1:7890"</span>
+<span class="token function">git</span> config --global https.proxy <span class="token string">"socks://127.0.0.1:7890"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="4-7-同步历史版本到工作空间"><a href="#4-7-同步历史版本到工作空间" class="headerlink" title="4.7 同步历史版本到工作空间"></a>4.7 同步历史版本到工作空间</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git checkout 版本号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="4-7-同步历史版本到工作空间"><a href="#4-7-同步历史版本到工作空间" class="headerlink" title="4.7 同步历史版本到工作空间"></a>4.7 同步历史版本到工作空间</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> checkout 版本号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -842,13 +842,13 @@ git config --global https.proxy "socks://127.0.0.1:7890"<span aria-hidden="true"
 	pom<span class="token punctuation">.</span>xml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>初始化本地仓库</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>将工作空间搭建的项目结构add到暂存区</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git add .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>将暂存区文件提交到版本库，生成第一个版本</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git commit -m '创建项目'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> commit -m <span class="token string">'创建项目'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>为当前项目创建一个远程仓库</p>
 <p><code>https://gitee.com/qfytao/fmwy.git</code></p>
@@ -857,14 +857,14 @@ git config --global https.proxy "socks://127.0.0.1:7890"<span aria-hidden="true"
 <h6 id="6-1-2-本地仓库关联远程仓库"><a href="#6-1-2-本地仓库关联远程仓库" class="headerlink" title="6.1.2 本地仓库关联远程仓库"></a>6.1.2 本地仓库关联远程仓库</h6><blockquote>
 <p>建立<code>D:\fmwy</code>中的本地仓库 和 远程仓库<code>https://gitee.com/qfytao/fmwy.git</code>的关联</p>
 </blockquote>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git remote add origin https://gitee.com/qfytao/fmwy.git #关联远程仓库并取别名origin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> remote <span class="token function">add</span> origin https://gitee.com/qfytao/fmwy.git <span class="token comment">#关联远程仓库并取别名origin</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h6 id="6-1-3-查看远程仓库状态"><a href="#6-1-3-查看远程仓库状态" class="headerlink" title="6.1.3 查看远程仓库状态"></a>6.1.3 查看远程仓库状态</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git remote -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="6-1-3-查看远程仓库状态"><a href="#6-1-3-查看远程仓库状态" class="headerlink" title="6.1.3 查看远程仓库状态"></a>6.1.3 查看远程仓库状态</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> remote -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h6 id="6-1-4-将本地仓库push到远程仓库"><a href="#6-1-4-将本地仓库push到远程仓库" class="headerlink" title="6.1.4 将本地仓库push到远程仓库"></a>6.1.4 将本地仓库push到远程仓库</h6><blockquote>
 <p>push到远程仓库需要gitee的帐号和密码</p>
 </blockquote>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git push origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> push origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://mlwtools.github.io/picx-images-hosting/20240117/1705494352958.webp" alt="1705494352958"></p>
 <h4 id="6-2-其他开发者pull远程仓库到本地"><a href="#6-2-其他开发者pull远程仓库到本地" class="headerlink" title="6.2 其他开发者pull远程仓库到本地"></a>6.2 其他开发者pull远程仓库到本地</h4><blockquote>
@@ -874,14 +874,14 @@ git config --global https.proxy "socks://127.0.0.1:7890"<span aria-hidden="true"
 <li><p>在<code>E</code>盘创建<code>ws</code>目录(<strong>空目录</strong>)，进入<code>ws</code>目录，打开<code>Git</code>客户端</p>
 </li>
 <li><p>创建本地版本库(<strong>必须的，才能拉取</strong>)</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 </li>
 </ul>
 <h6 id="6-2-2-拉取远程仓库到本地"><a href="#6-2-2-拉取远程仓库到本地" class="headerlink" title="6.2.2 拉取远程仓库到本地"></a>6.2.2 拉取远程仓库到本地</h6><ul>
 <li><p>拉取远程仓库</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git pull 远程仓库地址 master
-git pull https://gitee.com/qfytao/fmwy2.git master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> pull 远程仓库地址 master
+<span class="token function">git</span> pull https://gitee.com/qfytao/fmwy2.git master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 </li>
 </ul>
@@ -928,24 +928,24 @@ bbb
 <li>每个分支可以进行单独管理（常规分支、保护分支、只读分支）</li>
 <li>分支是可以合并的</li>
 </ul>
-<h4 id="7-3-分支操作"><a href="#7-3-分支操作" class="headerlink" title="7.3 分支操作"></a>7.3 分支操作</h4><h6 id="7-3-1-创建分支"><a href="#7-3-1-创建分支" class="headerlink" title="7.3.1 创建分支"></a>7.3.1 创建分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git branch branch_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="7-3-分支操作"><a href="#7-3-分支操作" class="headerlink" title="7.3 分支操作"></a>7.3 分支操作</h4><h6 id="7-3-1-创建分支"><a href="#7-3-1-创建分支" class="headerlink" title="7.3.1 创建分支"></a>7.3.1 创建分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> branch branch_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h6 id="7-3-2-查看分支"><a href="#7-3-2-查看分支" class="headerlink" title="7.3.2 查看分支"></a>7.3.2 查看分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git branch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="7-3-2-查看分支"><a href="#7-3-2-查看分支" class="headerlink" title="7.3.2 查看分支"></a>7.3.2 查看分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> branch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h6 id="7-3-3-切换分支"><a href="#7-3-3-切换分支" class="headerlink" title="7.3.3 切换分支"></a>7.3.3 切换分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git branch branch_name  # 切换到指定分支上的最新版本<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="7-3-3-切换分支"><a href="#7-3-3-切换分支" class="headerlink" title="7.3.3 切换分支"></a>7.3.3 切换分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> branch branch_name  <span class="token comment"># 切换到指定分支上的最新版本</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h6 id="7-3-4-检出分支"><a href="#7-3-4-检出分支" class="headerlink" title="7.3.4 检出分支"></a>7.3.4 检出分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git checkout 历史版本 -b branch_name  # 签出指定的历史版本创建新分支<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h6 id="7-3-4-检出分支"><a href="#7-3-4-检出分支" class="headerlink" title="7.3.4 检出分支"></a>7.3.4 检出分支</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> checkout 历史版本 -b branch_name  <span class="token comment"># 签出指定的历史版本创建新分支</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h6 id="7-3-5-分支合并"><a href="#7-3-5-分支合并" class="headerlink" title="7.3.5 分支合并"></a>7.3.5 分支合并</h6><ul>
 <li>三方合并</li>
 <li>快速合并</li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 在master分支执行 git merge dev   表示将dev分支合并merge
-git merge breanch_name<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 在master分支执行 git merge dev   表示将dev分支合并merge</span>
+<span class="token function">git</span> merge breanch_name<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><img src="https://mlwtools.github.io/picx-images-hosting/20240117/1705494384720.webp" alt="1705494384720"></p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 查看版本倒状树
-git log --online --graph<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 查看版本倒状树</span>
+<span class="token function">git</span> log --online --graph<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 
