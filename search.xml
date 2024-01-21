@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title></title>
+      <title>WordPress博客主题推荐</title>
       <link href="/2024/01/21/01.yan-jiu/wordpress-bo-ke-zhu-ti-tui-jian/wordpress-bo-ke-zhu-ti-tui-jian/"/>
       <url>/2024/01/21/01.yan-jiu/wordpress-bo-ke-zhu-ti-tui-jian/wordpress-bo-ke-zhu-ti-tui-jian/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>title: WordPress博客主题推荐<br>abbrlink:<br>tags: VPS<br>categories: 研究<br>summary: WordPress博客主题推荐。<br>img: <a href="https://mlwtools.github.io/picx-images-hosting/20240121/1705847840973.webp">https://mlwtools.github.io/picx-images-hosting/20240121/1705847840973.webp</a><br>cover: true<br>coverImg: <a href="https://mlwtools.github.io/picx-images-hosting/20240121/1705847840973.webp">https://mlwtools.github.io/picx-images-hosting/20240121/1705847840973.webp</a><br>date: 2024-01-21 08:00:00<br>password: cf026e86c87d58967e73f3900a6ca155cf805c868762a9ab474a791a0d0deadf</p><h2 id="WordPress博客主题推荐"><a href="#WordPress博客主题推荐" class="headerlink" title="WordPress博客主题推荐"></a>WordPress博客主题推荐</h2><blockquote><p><a href="https://www.bejson.com/enc/urlencode/">https://www.bejson.com/enc/urlencode/</a></p><p><a href="https://xmgseo.com/">https://xmgseo.com/</a></p><p><a href="https://xmgseo.com/wordpress%E6%A8%A1%E6%9D%BF%E6%8E%A8%E8%8D%90/">https://xmgseo.com/wordpress模板推荐/</a></p><p><a href="https://webnus.net/zh-CN/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9C%80%E5%A5%BD%E7%9A%84%E5%85%8D%E8%B4%B9-wordpress-%E4%B8%BB%E9%A2%98/">https://webnus.net/zh-CN/程序员最好的免费-wordpress-主题/</a></p><p><a href="https://dmthought.com/best-wordpress-themes/">https://dmthought.com/best-wordpress-themes/</a></p><p><a href="https://www.1deng.me/best-free-themes.html">https://www.1deng.me/best-free-themes.html</a></p></blockquote><p>argon主题</p><p><a href="https://github.com/solstice23/argon-theme">https://github.com/solstice23/argon-theme</a></p><h3 id="一键安装Wordpress"><a href="#一键安装Wordpress" class="headerlink" title="一键安装Wordpress"></a>一键安装Wordpress</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -s https://raw.githubusercontent.com/zhenhao-ma/instant-wordpress/main/ubuntu.sh <span class="token operator">|</span> <span class="token function">bash</span> -s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="WordPress博客主题推荐"><a href="#WordPress博客主题推荐" class="headerlink" title="WordPress博客主题推荐"></a>WordPress博客主题推荐</h2><blockquote><p><a href="https://www.bejson.com/enc/urlencode/">https://www.bejson.com/enc/urlencode/</a></p><p><a href="https://xmgseo.com/">https://xmgseo.com/</a></p><p><a href="https://xmgseo.com/wordpress%E6%A8%A1%E6%9D%BF%E6%8E%A8%E8%8D%90/">https://xmgseo.com/wordpress模板推荐/</a></p><p><a href="https://webnus.net/zh-CN/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9C%80%E5%A5%BD%E7%9A%84%E5%85%8D%E8%B4%B9-wordpress-%E4%B8%BB%E9%A2%98/">https://webnus.net/zh-CN/程序员最好的免费-wordpress-主题/</a></p><p><a href="https://dmthought.com/best-wordpress-themes/">https://dmthought.com/best-wordpress-themes/</a></p><p><a href="https://www.1deng.me/best-free-themes.html">https://www.1deng.me/best-free-themes.html</a></p></blockquote><p>argon主题</p><p><a href="https://github.com/solstice23/argon-theme">https://github.com/solstice23/argon-theme</a></p><h3 id="一键安装Wordpress"><a href="#一键安装Wordpress" class="headerlink" title="一键安装Wordpress"></a>一键安装Wordpress</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -s https://raw.githubusercontent.com/zhenhao-ma/instant-wordpress/main/ubuntu.sh <span class="token operator">|</span> <span class="token function">bash</span> -s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> 研究 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+        </tags>
       
     </entry>
     
