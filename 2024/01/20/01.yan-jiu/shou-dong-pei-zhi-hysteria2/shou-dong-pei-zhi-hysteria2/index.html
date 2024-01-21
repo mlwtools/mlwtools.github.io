@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo博客部署环境搭建, 数字 数字技术 网络 数字网络 研究栈 技术研究栈 计算机">
+    <meta name="keywords" content="手动安装配置Hysteria2, 数字 数字技术 网络 数字网络 研究栈 技术研究栈 计算机">
     <meta name="description" content="数字技术栈 | 数字网络栈">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo博客部署环境搭建 | 数字技术栈</title>
+    <title>手动安装配置Hysteria2 | 数字技术栈</title>
 
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://mlwtools.github.io/picx-images-hosting/20240118/1705551864340.ico">
 
@@ -520,12 +520,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://itcoder063.github.io/picx-images-hosting/imgs/1704798390729.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://mlwtools.github.io/picx-images-hosting/20240121/1705819538258.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo博客部署环境搭建</h1>
+                    <h1 class="description center-align post-title">手动安装配置Hysteria2</h1>
                 </div>
             </div>
         </div>
@@ -646,8 +646,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/VPS/">
+                                <span class="chip bg-color">VPS</span>
                             </a>
                         
                     </div>
@@ -671,7 +671,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-01-09
+                    2024-01-20
                 </div>
                 
 
@@ -680,14 +680,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    236
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    1 分
                 </div>
                 
 
@@ -710,238 +710,99 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo博客部署环境搭建"><a href="#Hexo博客部署环境搭建" class="headerlink" title="Hexo博客部署环境搭建"></a>Hexo博客部署环境搭建</h1><h2 id="本地博客环境搭建"><a href="#本地博客环境搭建" class="headerlink" title="本地博客环境搭建"></a>本地博客环境搭建</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`先安装本地需要的搭建环境。本地只需要安装两个软件：一个是Node.js,另一个是Git.
-<span class="token code-snippet code keyword">`Node.js的安装：安装完成，打开`</span>PowerShell<span class="token code-snippet code keyword">`，输入`</span>Node -v`,如果出现版本号，说明已经安装成功了。
-<span class="token code-snippet code keyword">`Git的安装：安装好后，还是打开`</span>powerShell<span class="token code-snippet code keyword">` 然后输入`</span>git —version`,出现版本号，说明安装成功。
-`这样本地环境就安装好了。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="手动安装配置Hysteria2"><a href="#手动安装配置Hysteria2" class="headerlink" title="手动安装配置Hysteria2"></a>手动安装配置Hysteria2</h1><h2 id="安装Hysteria2"><a href="#安装Hysteria2" class="headerlink" title="安装Hysteria2"></a>安装Hysteria2</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> -fsSL https://get.hy2.sh/<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`安装cnpm
-<span class="token title important"><span class="token punctuation">#</span> npm install cnpm -g</span>
+<h2 id="移除-Hysteria2"><a href="#移除-Hysteria2" class="headerlink" title="移除 Hysteria2"></a>移除 Hysteria2</h2><pre class="line-numbers language-none"><code class="language-none">bash &lt;(curl -fsSL https://get.hy2.sh/) --remove<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-`安装镜像源
-<span class="token title important"><span class="token punctuation">#</span> npm install nrm -g</span>
+<h2 id="配置服务端"><a href="#配置服务端" class="headerlink" title="配置服务端"></a>配置服务端</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">listen: :443
 
-`指定使用的镜像源
-<span class="token title important"><span class="token punctuation">#</span> npm use xxx</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+tls:
+  cert: /cert/bing.crt 
+  key: /cert/bing.key  
 
+auth:
+  type: password
+  password: test666
 
-
-<h2 id="百度云的环境搭建-重点"><a href="#百度云的环境搭建-重点" class="headerlink" title="百度云的环境搭建-重点"></a>百度云的环境搭建-重点</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`有了本地环境，我们想要别人看到我们的博客，我们还需要云服务器。现在百度智能云是有活动的，最便宜的新人只要37元一年，四舍五入等于不要钱。 (展示百度云的活动页面)，并且老用户和新用户都有不同的优惠。
-<span class="token code-snippet code keyword">`百度智能云活动链接https://cloud.baidu.com/campaign/2022/index.html 进入百度智能云的控制台，然后找到服务器，等到服务器的公网IP地址，我这里是`</span>180.76.183.66` 。打开MobaXterm软件，当然你也可以使用任何的远程服务器链接软件。
-`直接输入IP地址和密码，显示连接成功。
-`然后用一条命令快速安装服务器用到的一些常用工具，文档我会发我的博客上。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel -y</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装<code>git</code></h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> yum install -y git</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ul>
-<li>查看一下版本</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> git --version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="创建git使用的用户"><a href="#创建git使用的用户" class="headerlink" title="创建git使用的用户"></a>创建git使用的用户</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> useradd lcf</span>
-
-`设置密码
-<span class="token title important"><span class="token punctuation">#</span> passwd lcf </span>
-
-`设置权限
-<span class="token title important"><span class="token punctuation">#</span> chmod 740 /etc/sudoers </span>
-
-`修改root权限
-<span class="token title important"><span class="token punctuation">#</span> vim /etc/sudoers  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>使用<code>:set nu</code>打开vim的行数显示，按i直接进入编辑状态。</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> lcf ALL=(ALL)    ALL</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">直接<span class="token code-snippet code keyword">`:wq!`</span>，进行保存，保存后再次修改权限。因为 <span class="token code-snippet code keyword">`sudoers`</span>是只读文件，所有要使用 <span class="token code-snippet code keyword">`!`</span>进行保存，否则会失败。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ul>
-<li>修改完成后记得把这个文件的权限改回来，否则很容易被攻击。服务器一定要安全为主。</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`改回权限
-<span class="token title important"><span class="token punctuation">#</span> chmod 600 /etc/sudoers  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h3 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装<code>Nginx</code></h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`安装nginx
-<span class="token title important"><span class="token punctuation">#</span> yum install -y nginx </span>
-
-`启动Nginx服务
-<span class="token title important"><span class="token punctuation">#</span> systemctl start nginx.service  </span>
-
-`查看Nginx状态
-<span class="token title important"><span class="token punctuation">#</span> systemctl status nginx.service  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>启动后修改<code>nginx.conf</code>配置文件</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> vim /etc/nginx/nginx.conf</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ul>
-<li>修改项</li>
-</ul>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token variable"><span class="token variable">`</span>注意要修改用户<span class="token variable">`</span></span>
-user lcf<span class="token punctuation">;</span>
-
-server <span class="token punctuation">{</span>
-        listen       <span class="token number">80</span> default_server<span class="token punctuation">;</span>
-        listen       <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:80 default_server<span class="token punctuation">;</span>
-        server_name  <span class="token number">192.168</span>.101.100<span class="token punctuation">;</span>
-        root         /home/lcf/hexo<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>修改完配置以后，需要重启一下Nginx服务。</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`重启动Nginx服务
-<span class="token title important"><span class="token punctuation">#</span> systemctl restart nginx.service  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<ul>
-<li>如果正常启动，没有任何报错，说明Nginx配置好了。</li>
-</ul>
-<h3 id="创建网站跟目录"><a href="#创建网站跟目录" class="headerlink" title="创建网站跟目录"></a>创建网站跟目录</h3><p>这里放在<code>\home\lcf\hexo</code>下。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> mkdir /home/lcf/hexo</span>
-
-`授予权限
-<span class="token title important"><span class="token punctuation">#</span> chown lcf:lcf -R /home/lcf/hexo</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="建立git仓库"><a href="#建立git仓库" class="headerlink" title="建立git仓库"></a>建立git仓库</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> su lcf</span>
-<span class="token title important"><span class="token punctuation">#</span> cd /home/lcf</span>
-
-`创建Git仓库
-<span class="token title important"><span class="token punctuation">#</span> git init --bare blog.git  </span>
-
-`授予Git仓库权限
-<span class="token title important"><span class="token punctuation">#</span> chown lcf:lcf -R blog.git  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="同步网站根目录"><a href="#同步网站根目录" class="headerlink" title="同步网站根目录"></a>同步网站根目录</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> cd blog.git/hooks/</span>
-
-<span class="token title important"><span class="token punctuation">#</span> vim post-receive</span>
-
-`把下面的内容拷贝进去
-<span class="token title important"><span class="token punctuation">#</span>!/bin/sh</span>
-git --work-tree=/home/lcf/hexo  --git-dir=/home/lcf/blog.git checkout -f<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>再次修改权限</li>
-</ul>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> chmod +x post-receive</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ul>
-<li>这样就已经把服务器端的环境基本配置好了</li>
-</ul>
-<h2 id="本地安装和配置Hexo"><a href="#本地安装和配置Hexo" class="headerlink" title="本地安装和配置Hexo"></a>本地安装和配置Hexo</h2><h3 id="全局安装hexo-cli"><a href="#全局安装hexo-cli" class="headerlink" title="全局安装hexo-cli"></a>全局安装hexo-cli</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> npm install -g hexo-cli</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>这里就选择 <code>D:\blogsite\</code>文件夹了，这个路径你可以自行选择，什么都可以，然后输入下面的命令。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> hexo init foldername</span>
-
-<span class="token title important"><span class="token punctuation">#</span> cd foldername</span>
-
-<span class="token title important"><span class="token punctuation">#</span> npm install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>可以看到在文件夹下生成了很多文件，有了这些文件就可以在本地编写博客了。</p>
-<p>安装完这一部后，我们一般会个性化配置我们的网站信息，这时候使用<code>code .</code> 打开VSCode，来修改代码。</p>
-<p>打开<code>_config.yml</code>对下面这些代码进行配置。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">title: <span class="token string">'JavaEE技术栈'</span>
-subtitle: <span class="token string">'lcfqzd的博客'</span>
-description: <span class="token string">'JavaEE技术栈'</span>
-keywords: <span class="token string">'Java后端开发'</span>
-author: lcfqzd
-language: zh-CN <span class="token comment"># 主题语言</span>
-timezone: Asia/Shanghai <span class="token comment"># 中国的时区</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>配置完成就可以编写文章了</p>
-<h2 id="本地编写文章和预览"><a href="#本地编写文章和预览" class="headerlink" title="本地编写文章和预览"></a>本地编写文章和预览</h2><p>你可以执行下列命令来快速创建一篇新文章或者新的页面</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`创建目录
-<span class="token title important"><span class="token punctuation">#</span> hexo new page pagename</span>
-
-`创建文档
-<span class="token title important"><span class="token punctuation">#</span> hexo new docname</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这样一键就创建好了文章编写页面。默认的位置是</p>
-<pre class="line-numbers language-PowerShell" data-language="PowerShell"><code class="language-PowerShell">\source\_posts\docname.md<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后把你写的markdown文章直接复制进去，粘贴复制，保存。就完成了。接下来就需要查看一下自己的文章和网站的样子了。打开VSCode的终端，然后安装<code>hexo-server</code>，输入下面的命令。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> npm install hexo-server --save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后启动服务。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> hexo server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>在浏览器输入地址：<code>http://localhost:4000</code>,就可以看到你写的博客了。</p>
-<h2 id="把博客上传到云服务器"><a href="#把博客上传到云服务器" class="headerlink" title="把博客上传到云服务器"></a>把博客上传到云服务器</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">有了文章我们就可以把博客上传到云服务器了。但是要想用Git把代码传到服务器，是需要密钥的。这就就直接创建一下密钥。在本地电脑打开<span class="token code-snippet code keyword">`powerShell`</span>，创建密钥。
-如果你已经有了密钥就不用再次创建了，特别是公司已经有很多git管理的项目时，否则需要都进行重新配置。我这里是已经有密钥了。到服务端创建一个存放密钥的文件夹。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`创建密钥的命令
-<span class="token title important"><span class="token punctuation">#</span> ssh-keygen -t rsa</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+masquerade: 
+  type: proxy
+  proxy:
+    url: https://www.bing.com/ 
+    rewriteHost: <span class="token boolean">true</span>
+obfs:
+  type: salamander
+  salamander:
+    password: test666<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`切换用户
-<span class="token title important"><span class="token punctuation">#</span> su lcf</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ufw allow <span class="token number">443</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-`创建存放密钥的文件夹
-<span class="token title important"><span class="token punctuation">#</span> mkdir ~/.ssh   </span>
 
-`写入密钥
-<span class="token title important"><span class="token punctuation">#</span> vim ~/.ssh/authorized_keys  </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>来到自己的客户端，找到<code>C:\Users\lcf\.ssh</code> 打开<code>id_rsa</code>文件，直接复制全部，就可以完成了。</p>
-<p>这样我们就可以通过<code>lcf</code>这个用户向服务器提交代码了，我们要测试一下，看看是否配置的可以连接上</p>
-<p><strong>本地测试</strong></p>
-<p>打开本地主机的<code>powerShell</code>，然后用ssh进行连接。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> ssh -v lcf@192.168.101.100 //服务器ip</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="在线证书生成"><a href="#在线证书生成" class="headerlink" title="在线证书生成"></a>在线证书生成</h2><p><a target="_blank" rel="noopener" href="https://www.ssleye.com/ssltool/self_sign.html">https://www.ssleye.com/ssltool/self_sign.html</a></p>
+<p><img src="https://mlwtools.github.io/picx-images-hosting/20240121/1705819270155.webp" alt="1705819270155"></p>
+<p>证书/PEM格式</p>
+<p>#your_cert.crt </p>
+<pre class="line-numbers language-none"><code class="language-none">-----BEGIN CERTIFICATE-----
+MIIDPDCCAiSgAwIBAgIUGAsW7CaccL8PjYMxwITNkagO+2swDQYJKoZIhvcNAQEF
+BQAwNTESMBAGA1UEAwwJbWx3YWl0ZXN0MRIwEAYDVQQKDAltbHdhaXRlc3QxCzAJ
+BgNVBAYTAkNOMCAXDTI0MDEyMDIxMDUwMFoYDzIwNjAxMjMwMjEwNTAwWjBaMQsw
+CQYDVQQGEwJDTjEPMA0GA1UECAwG56aP5bu6MQ8wDQYDVQQHDAbljqbpl6gxEjAQ
+BgNVBAoMCW1sd2FpdGVzdDEVMBMGA1UEAwwMd3d3LmJpbmcuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroSOIKi0ArSYPG6eJleKzfcFbD4bw+0T
+tT72K16eanaCQbXZ/T1fs3XGl6g7NyDRnLOBKzAX/PUqSlTXQhzrL3APMiB8CZnV
+EzPE2KpXNdDhejyN+d9kiOxLa7r7LdKyyaAyw0HenNCmtIW88+QvcR4ruQHZ7d5U
+VFa0xTpq4+YkN7cvWvE6grL6Wq2G+YDJX+X+gffWAQbgnv8/k0JjAo7hcoYPQl0O
+NBjujEZ79QtYShYOGjfIIh7i16G5DUxyE9NyuuAT93ZzRB7Y2BMPdhcL7b6BAzAU
+Cs++GBAbtUgqngtfLc8LQLzuvRj1GxwoOW8CWFJATF7A2yOBlu4OCwIDAQABox0w
+GzALBgNVHREEBDACggAwDAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQUFAAOCAQEA
+R0n53vicKXBRtswPB7ukY4kvfDhWoncLCHeuWT5x6QjRFhFXrLnbzrnaxZD/gtIT
+5bDaCLZiFno4q8/ZjApa9+5p3iczAFnzpH7o3BJ3IlOo+uT8ECZluNeGMvgx2CA8
+xRVB3Ji1npEQf1PczQXNYEiLZ8Rqf/QDBXp4Yj8k/Y8PDhad3wP5qvo4E2tiUvk5
+SmhwSpRen+9PrUAoRN/6iJuPWv3qMmnaO6fGoddB35/j3ThuwxJT0oHsZUWYEa2T
+qxu5epcDD+vT5AylLsxeCI72Ffv9O2RWpRNW3wEVPHLTIHzQn/+wOHdiCWkNs7TR
+cW+NizGk6g8PQj2gHdQR2w==
+-----END CERTIFICATE-----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>安装部署器</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> npm install --save hexo-deployer-git</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>私钥/PEM格式</p>
+<p>#your_key.key </p>
+<pre class="line-numbers language-none"><code class="language-none">-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuhI4gqLQCtJg8
+bp4mV4rN9wVsPhvD7RO1PvYrXp5qdoJBtdn9PV+zdcaXqDs3INGcs4ErMBf89SpK
+VNdCHOsvcA8yIHwJmdUTM8TYqlc10OF6PI3532SI7Etruvst0rLJoDLDQd6c0Ka0
+hbzz5C9xHiu5Adnt3lRUVrTFOmrj5iQ3ty9a8TqCsvparYb5gMlf5f6B99YBBuCe
+/z+TQmMCjuFyhg9CXQ40GO6MRnv1C1hKFg4aN8giHuLXobkNTHIT03K64BP3dnNE
+HtjYEw92FwvtvoEDMBQKz74YEBu1SCqeC18tzwtAvO69GPUbHCg5bwJYUkBMXsDb
+I4GW7g4LAgMBAAECggEAR0e9BXnijHhW9df4oJCBET8j5+I2VQAwXIcq5OvwqGtf
+KJeuQdEflZ01UBxWk13EP8zRpWIvahJ5A4NDqK1HIkkS69Z40zMR5JXwgM6ScFiw
+v8yb8MNdvM9GvunQThcRD2lvUnFFC6ftby5wzu0Us48vLJGlAZMdvpTroOMLZamd
+1kvIU1Uba83EvT4Rw/f7yFvajp9j6LqtmtmDBBcY6LN+mM+zCgR+NfJrZEullHLM
+45qoEXmjPtMiWPBIaXs+TrtHa+D3frhtixqCYQ30WE/N13yZbhZUgviiCNuj5RHx
+hNRWmRkYrdqkUwcJ41+02D3FZo9GEaZJ6BtgC/6ugQKBgQDUj64PiEBiu/DD2ClE
+W7mU12gab1ZkGl5Pf6FT28kPgtTHEu25yXEFO8scvsDtCVXVkXtWuHpBE5RRVffd
+cfXGO+4VAavdy3I5ua/ZKVOec0/PezL8SwjVNXRW5oc22MeZENaZS/eM85ylOjse
+niyqo9KjVuDFHKouOvkfsRzVHQKBgQDSLpmWRI+mV7t5lGSYSYZT5hDp8LfqGI5X
+E10F5+JTWQw0RNVGYjQHL9f7gz2LjaztxdhFa4RoEO22kxUcZK0NX69KrkJo+iIZ
+X4LqTWzCgoJRpbTTHZtclUUDt5no/G1g07ERWEfx6rQVDFJQf0rDl0Td+DesJLkN
+g85+SedPRwKBgAX2GZ2Z5qRePPxhHZcrM2M3P1YudS/NhYOZQr8FVPg4ZRtILp6d
+Rawt5x5hQyvirSOWNu1RsywMDobRcGgngAsVNzIjn9xSjluMF6BxhkTVWxGolN96
+gz7nhuHBCV3CaqaiUEJwXPr5AhWoMmxDZ2FJwuiN0TP1/9fYE5CN+Q8JAoGAEGuT
+lCnHDzfLbbQqJ7uWwvc2WxBzTdadSDA7FDsJc3mBepPmFZmWdvlF5mBaboyi9fB+
+9O1xaq/n4lubSpyS6HiROURj68+e2lyb3bIuzQNlKvvHJLcrbBA9VA0D+S+/W9Eu
+BCzhcgTkDMDprWBEdwNaXf0GXGyCCIxDlZoweAECgYEAsETsLUBjBJ2cL0QQ05l3
+a9d0vpTJwNFW4uN9lDMupngS/RC7bGZYVu846DjU3dJ+8LM2NCm3n17mQdaAAGe+
++hJgr50mV3lfNhO5Aul6fgLpNknAGUnoy1O1xtychsPu0dSCeiL0QPDClITOmFCK
+B9ekpyPUSMwV6mit7Khe4KA=
+-----END PRIVATE KEY-----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>修改本地的hexo配置文件<code>_config.yml</code>,打开文件后，拖动到最后边，输入下面的配置</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">deploy:
-  type: git
-  repository: lcf@192.168.101.100:/home/lcf/blog.git
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="开启Hysteria2服务"><a href="#开启Hysteria2服务" class="headerlink" title="开启Hysteria2服务"></a>开启Hysteria2服务</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl start hysteria-server.service
+systemctl status hysteria-server.service
+systemctl restart hysteria-server.service<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>安装完成后，输入下面的命令进行部署</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> hexo clean</span>
-<span class="token title important"><span class="token punctuation">#</span> hexo g -d</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>如果一切正常，就可以直接传到服务器上，然后输入网址192.168.10.100就可以完成博客的浏览了，我这里没有使用域名，如果你有域名，只要把域名解析到这个网址就可以了。</p>
-<h2 id="好的主题"><a href="#好的主题" class="headerlink" title="好的主题"></a>好的主题</h2><p><code>博客参考</code>：</p>
-<p><a target="_blank" rel="noopener" href="https://blog.juanertu.com/">https://blog.juanertu.com/</a></p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">`Oranges
-git clone https://github.com/zchengsite/hexo-theme-oranges.git themes/oranges
-<span class="token title important"><span class="token punctuation">#</span> 需要手动书写编号，会原样显示</span>
 
-`MengD
-git clone -b master https://github.com/lete114/hexo-theme-MengD.git themes/MengD
-<span class="token title important"><span class="token punctuation">#</span> 会自动生成编号，书写标题不用带编号</span>
-
-`ocean
-git clone https://github.com/zhwangart/hexo-theme-ocean.git
-
-`jelly
-git clone https://github.com/preccrep/hexo-theme-jelly.git themes/jelly
-
-`ayer
-git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
-
-`bubuzou
-git clone https://github.com/Bulandent/hexo-theme-bubuzou.git
-
-`MiHo
-git clone https://github.com/WongMinHo/hexo-theme-miho.git themes/miho
-
-`Meadow
-git clone https://github.com/kb1000fx/Meadow
-
-3-hexo
-next
-原因是hexo在5.0之后把swig给删除了需要自己手动安装
-npm i hexo-renderer-swig
-
-keep
-Material 
-A-Obsidian
-Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="设置Hysteria2开机自启"><a href="#设置Hysteria2开机自启" class="headerlink" title="设置Hysteria2开机自启"></a>设置Hysteria2开机自启</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl <span class="token builtin class-name">enable</span> hysteria-server.service<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
                 
@@ -969,7 +830,7 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://mlwtools.cloudns.biz/2024/01/09/01.yan-jiu/hexo-bo-ke-bu-shu/hexo-bo-ke-bu-shu/">https://mlwtools.cloudns.biz/2024/01/09/01.yan-jiu/hexo-bo-ke-bu-shu/hexo-bo-ke-bu-shu/</a>
+                    <a href="https://mlwtools.cloudns.biz/2024/01/20/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/">https://mlwtools.cloudns.biz/2024/01/20/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1007,8 +868,8 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/VPS/">
+                                    <span class="chip bg-color">VPS</span>
                                 </a>
                             
                         </div>
@@ -1204,23 +1065,23 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/01/10/01.yan-jiu/vps-da-jian-hysteria2/hysteria2/">
+                <a href="/2024/01/20/01.yan-jiu/x-ui-mian-ban-da-jian/x-ui-mian-ban-da-jian-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704796642411.jpg" class="responsive-img" alt="VPS搭建hysteria2">
+                        <img src="https://mlwtools.github.io/picx-images-hosting/20240120/1705764215011.webp" class="responsive-img" alt="X-UI面板搭建教程">
                         
-                        <span class="card-title">VPS搭建hysteria2</span>
+                        <span class="card-title">X-UI面板搭建教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Hysteria 是一个强大、快速、抗审查的代理工具。
+                            支持多协议多用户的 xray 面板。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-20
                         </span>
                         <span class="publish-author">
                             
@@ -1237,8 +1098,8 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hysteria2/">
-                        <span class="chip bg-color">Hysteria2</span>
+                    <a href="/tags/VPS/">
+                        <span class="chip bg-color">VPS</span>
                     </a>
                     
                 </div>
@@ -1252,30 +1113,30 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/08/01.yan-jiu/ben-di-da-jian-gu-ge-gemini-liao-tian-ji-qi-ren/ben-di-da-jian-gu-ge-gemini-liao-tian-ji-qi-ren/">
+                <a href="/2024/01/18/02.gong-ju/git-an-zhuang-pei-zhi-jiao-cheng/11.git-zi-jian-dai-ma-tuo-guan-ping-tai/">
                     <div class="card-image">
                         
-                        <img src="https://itcoder063.github.io/picx-images-hosting/imgs/2023-12-18-222939.webp" class="responsive-img" alt="本地搭建谷歌 Gemini 聊天机器人">
+                        <img src="https://mlwtools.github.io/picx-images-hosting/20240117/1705498130945.webp" class="responsive-img" alt="Git自建代码托管平台">
                         
-                        <span class="card-title">本地搭建谷歌 Gemini 聊天机器人</span>
+                        <span class="card-title">Git自建代码托管平台</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            体验 Gemini Pro 智能聊天机器人的易用性。媲美GPT4，本地搭建谷歌 Gemini Pro 智能聊天机器人！轻轻松松就可使用。
+                            GitHub 或 Gitee 平台的私有库只能免费 5 个人，当公司里多人开发一个项目，又不希望公开出去，那么就可以自建代码托管平台：GitLab。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A0%94%E7%A9%B6/" class="post-category">
-                                    研究
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
                                 </a>
                             
                             
@@ -1285,8 +1146,8 @@ Aurora<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Gemini/">
-                        <span class="chip bg-color">Gemini</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
