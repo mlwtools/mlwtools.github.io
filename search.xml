@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>自建欧美日韩5G原生ISP住宅IP代理</title>
+      <link href="/2024/01/21/01.yan-jiu/zi-jian-ou-mei-ri-han-5g-yuan-sheng-isp-zhu-zhai-ip-dai-li/zi-jian-ou-mei-ri-han-5g-yuan-sheng-isp-zhu-zhai-ip-dai-li/"/>
+      <url>/2024/01/21/01.yan-jiu/zi-jian-ou-mei-ri-han-5g-yuan-sheng-isp-zhu-zhai-ip-dai-li/zi-jian-ou-mei-ri-han-5g-yuan-sheng-isp-zhu-zhai-ip-dai-li/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="自建欧美日韩5G原生ISP住宅IP代理"><a href="#自建欧美日韩5G原生ISP住宅IP代理" class="headerlink" title="自建欧美日韩5G原生ISP住宅IP代理"></a>自建欧美日韩5G原生ISP住宅IP代理</h2><h3 id="EC2设置"><a href="#EC2设置" class="headerlink" title="EC2设置"></a>EC2设置</h3><blockquote><p>EC2设置，打开wavelength区域。</p></blockquote><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/image.png" alt="image"></p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442758.png" alt="image-20240122143141531"></p><h3 id="创建运营商网关并设置子网"><a href="#创建运营商网关并设置子网" class="headerlink" title="创建运营商网关并设置子网"></a>创建运营商网关并设置子网</h3><blockquote><p>在VPC里面创建运营商网关，设置子网。</p></blockquote><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442759.png" alt="image-20240122114245516"></p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442760.png" alt="image-20240122114808643"></p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442761.png" alt="image-20240122114912019"></p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442762.png" alt="image-20240122114929570"></p><h3 id="创建实例"><a href="#创建实例" class="headerlink" title="创建实例"></a>创建实例</h3><blockquote><p>创建一个T2 nano 中转实例，带公网IP。</p><p>创建一个T3 medium 落地实例，子网选择wavelength区域。</p></blockquote><h4 id="美国中转"><a href="#美国中转" class="headerlink" title="美国中转"></a>美国中转</h4><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442763.png" alt="image-20240122120330290"></p><h4 id="美国落地"><a href="#美国落地" class="headerlink" title="美国落地"></a>美国落地</h4><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442764.png" alt="image-20240122130430860"></p><h3 id="登录T2中转实例"><a href="#登录T2中转实例" class="headerlink" title="登录T2中转实例"></a>登录T2中转实例</h3><blockquote><p>登录T2实例，通过私有IP连接T3落地实例。</p><ul><li>修改T2中转实例为root密码登陆</li><li>利用秘钥通过私有IP连接T3落地实例</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> -i /home/ubuntu/us_ec2.pem ubuntu@172.31.80.85<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>修改T3落地实例为root密码登陆</li></ul></blockquote><h4 id="更改root登陆"><a href="#更改root登陆" class="headerlink" title="更改root登陆"></a>更改root登陆</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> root:你的密码 <span class="token operator">|</span><span class="token function">sudo</span> chpasswd root <span class="token comment">#你的密码#替换为你的root账户密码#</span><span class="token builtin class-name">echo</span> root:test <span class="token operator">|</span> <span class="token function">sudo</span> chpasswd root<span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s/^#\?PermitRootLogin.*/PermitRootLogin yes/g'</span> /etc/ssh/sshd_config<span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g'</span> /etc/ssh/sshd_config<span class="token function">sudo</span> <span class="token function">reboot</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="T3落地实例搭建X-ui面板"><a href="#T3落地实例搭建X-ui面板" class="headerlink" title="T3落地实例搭建X-ui面板"></a>T3落地实例搭建X-ui面板</h3><blockquote><p>在T3落地实例上搭建X-ui面板。</p></blockquote><pre class="line-numbers language-none"><code class="language-none">bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)bash &lt;(wget -qO- https://raw.githubusercontent.com/sing-web/x-ui/main/install_CN.sh)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="https://mlwtools.github.io/picx-images-hosting/20240120/1705759878660.webp" alt="1705759878660.webp"></p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442765.png" alt="image-20240122143746392"></p><h3 id="T2中转实例搭建端口转发"><a href="#T2中转实例搭建端口转发" class="headerlink" title="T2中转实例搭建端口转发"></a>T2中转实例搭建端口转发</h3><blockquote><p>在T2中转实例上搭建端口转发。</p></blockquote><pre class="line-numbers language-none"><code class="language-none">bash &lt;(curl -fsSL https://raw.githubusercontent.com/arloor/iptablesUtils/master/natcfg.sh)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/202401221442766.png" alt="image-20240122143523017"></p><p>这里需要先在T2实例上转发T3的X-ui面板登录端口，为了后期方便，本地端口和远程端口可以设置成一样的。</p><p>通过T2中转登录X-ui后台，新建一个节点链接，并复制或扫码到客户端。</p><p>此时在T2上再添加一条转发，转发的端口填写刚新建的节点链接的端口，IP填写T3实例的私有IP。</p><p>此时刷新节点，应该能够使用了。可以检测一下IP解锁情况。</p><pre class="line-numbers language-none"><code class="language-none">wget -qO- https://github.com/yeahwu/check/raw/main/check.sh | bashbash &lt;(curl -L -s check.unlock.media) -M 4 #IPV4解锁检测#<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>如有异常，请检查安全组是否全开，其他请仔细排查。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 研究 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>X-UI面板搭建教程</title>
       <link href="/2024/01/20/01.yan-jiu/x-ui-mian-ban-da-jian/x-ui-mian-ban-da-jian-jiao-cheng/"/>
       <url>/2024/01/20/01.yan-jiu/x-ui-mian-ban-da-jian/x-ui-mian-ban-da-jian-jiao-cheng/</url>
