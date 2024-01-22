@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>XShell&amp;Xftp7禁用退出后弹窗提醒</title>
+      <link href="/2024/01/21/01.yan-jiu/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/"/>
+      <url>/2024/01/21/01.yan-jiu/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="XShell-amp-Xftp7禁用退出后弹窗提醒"><a href="#XShell-amp-Xftp7禁用退出后弹窗提醒" class="headerlink" title="XShell&amp;Xftp7禁用退出后弹窗提醒"></a>XShell&amp;Xftp7禁用退出后弹窗提醒</h2><blockquote><p>安装 XShell7 / Xftp7并运行一次</p></blockquote><p>找到 Xshell7 的主程序文件 <code>Xshell.exe</code>，并备份一份</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915682064.webp" alt="1705915682064"></p><p>打开这个网站：<a href="https://hexed.it/">https://hexed.it/</a> ，上传 Xshell 7 的主程序文件。将里面的 <code>74 11 6A 00 6A 07 6A 01</code> 替换成 <code>EB 11 6A 00 6A 07 6A 01</code>，然后替换主程序文件即可</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915580481.webp" alt="1705915580481"></p><p>找到 Xftp7 的主程序文件 <code>Xftp.exe</code>，并备份一份</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915643459.webp" alt="1705915643459"></p><p>同样在这个网站上传 Xftp7 的主程序文件。将里面的 <code>75 10 6A 00 6A 07 50 6A</code> 替换成 <code>EB 10 6A 00 6A 07 50 6A</code>，然后替换主程序文件即可</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915592460.webp" alt="1705915592460"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 研究 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>手动安装配置Hysteria2</title>
       <link href="/2024/01/21/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/"/>
       <url>/2024/01/21/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/</url>

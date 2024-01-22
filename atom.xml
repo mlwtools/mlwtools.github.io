@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>XShell&amp;Xftp7禁用退出后弹窗提醒</title>
+    <link href="https://mlwtools.cloudns.biz/2024/01/21/01.yan-jiu/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/"/>
+    <id>https://mlwtools.cloudns.biz/2024/01/21/01.yan-jiu/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/xshell-xftp7-jin-yong-tui-chu-hou-dan-chuang-ti-xing/</id>
+    <published>2024-01-21T00:00:00.000Z</published>
+    <updated>2024-01-22T09:44:42.778Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="XShell-amp-Xftp7禁用退出后弹窗提醒"><a href="#XShell-amp-Xftp7禁用退出后弹窗提醒" class="headerlink" title="XShell&amp;Xftp7禁用退出后弹窗提醒"></a>XShell&amp;Xftp7禁用退出后弹窗提醒</h2><blockquote><p>安装 XShell7 / Xftp7并运行一次</p></blockquote><p>找到 Xshell7 的主程序文件 <code>Xshell.exe</code>，并备份一份</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915682064.webp" alt="1705915682064"></p><p>打开这个网站：<a href="https://hexed.it/">https://hexed.it/</a> ，上传 Xshell 7 的主程序文件。将里面的 <code>74 11 6A 00 6A 07 6A 01</code> 替换成 <code>EB 11 6A 00 6A 07 6A 01</code>，然后替换主程序文件即可</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915580481.webp" alt="1705915580481"></p><p>找到 Xftp7 的主程序文件 <code>Xftp.exe</code>，并备份一份</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915643459.webp" alt="1705915643459"></p><p>同样在这个网站上传 Xftp7 的主程序文件。将里面的 <code>75 10 6A 00 6A 07 50 6A</code> 替换成 <code>EB 10 6A 00 6A 07 50 6A</code>，然后替换主程序文件即可</p><p><img src="https://mlwtools.github.io/picx-images-hosting/20240122/1705915592460.webp" alt="1705915592460"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="研究" scheme="https://mlwtools.cloudns.biz/categories/%E7%A0%94%E7%A9%B6/"/>
+    
+    
+    <category term="VPS" scheme="https://mlwtools.cloudns.biz/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手动安装配置Hysteria2</title>
     <link href="https://mlwtools.cloudns.biz/2024/01/21/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/"/>
     <id>https://mlwtools.cloudns.biz/2024/01/21/01.yan-jiu/shou-dong-pei-zhi-hysteria2/shou-dong-pei-zhi-hysteria2/</id>
@@ -469,30 +493,6 @@
     
     
     <category term="storage" scheme="https://mlwtools.cloudns.biz/tags/storage/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费精品资源网站</title>
-    <link href="https://mlwtools.cloudns.biz/2024/01/05/03.geng-duo/mian-fei-jing-pin-zi-yuan-wang-zhan/mian-fei-jing-pin-zi-yuan-wang-zhan/"/>
-    <id>https://mlwtools.cloudns.biz/2024/01/05/03.geng-duo/mian-fei-jing-pin-zi-yuan-wang-zhan/mian-fei-jing-pin-zi-yuan-wang-zhan/</id>
-    <published>2024-01-05T00:00:00.000Z</published>
-    <updated>2024-01-18T07:01:21.465Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="免费精品资源网站"><a href="#免费精品资源网站" class="headerlink" title="免费精品资源网站"></a>免费精品资源网站</h1><h2 id="在线编程学习"><a href="#在线编程学习" class="headerlink" title="在线编程学习"></a>在线编程学习</h2><p><a href="https://www.bilibili.com/">哔哩哔哩</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949929523.jpg" alt="1704949929523"></p><p><a href="https://leetcode-cn.com/">LeetCode</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949940836.jpg" alt="1704949940836"></p><h2 id="在线画图工具"><a href="#在线画图工具" class="headerlink" title="在线画图工具"></a>在线画图工具</h2><p><a href="https://www.processon.com/">在线画图工具ProcessOn</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704935825571.jpg" alt="1704935825571"></p><p><a href="https://app.diagrams.net/">在线画图工具draw.io</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704935961234.jpg" alt="1704935961234"></p><p><a href="http://www.mindline.cn/webapp">在线思维导图工具</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949521372.jpg" alt="1704949521372"></p><p><a href="http://haha98k.com/">PlantUML在线编辑器</a></p><h2 id="在线写作辅助"><a href="#在线写作辅助" class="headerlink" title="在线写作辅助"></a>在线写作辅助</h2><p><a href="https://mdnice.com/">mdnice markdown排版工具</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949588227.jpg" alt="1704949588227"></p><p><a href="http://md.aclickall.com/">md2all markdown排版工具</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949613176.jpg" alt="1704949613176"></p><p><a href="http://www.fly63.com/tool/textreplace/">在线文本替换</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949639935.jpg" alt="1704949639935"></p><p><a href="https://www.eteste.com/">在线字数统计</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949652595.jpg" alt="1704949652595"></p><p><a href="https://picx.xpoet.cn/">图片上传 | PicX 图床神器</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704936819947.jpg" alt="1704936819947"></p><p><a href="https://sm.ms/">在线免费图床</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949844496.jpg" alt="1704949844496"></p><p><a href="https://imgkr.com/">图壳图床</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949881010.jpg" alt="1704949881010"></p><p><a href="https://urlify.cn/">在线短链接工具</a></p><p><img src="https://itcoder063.github.io/picx-images-hosting/imgs/1704949901218.jpg" alt="1704949901218"></p><h2 id="在线素材库"><a href="#在线素材库" class="headerlink" title="在线素材库"></a>在线素材库</h2><p><a href="https://bz.zzzmh.cn/">极简壁纸</a></p><p><a href="https://wall.alphacoders.com/">Wallpaper Abyss壁纸</a></p><p><a href="http://pngimg.com/">免费透明背景图片素材</a></p><p><a href="https://pluspng.com/">免费PNG图片库</a></p><p><a href="https://pixabay.com/zh/">Pixabay图片素材库</a></p><p><a href="https://unsplash.com/">Unsplash图片素材库</a></p><p><a href="http://www.pexels.com/">Pexels图片素材库</a></p><p><a href="https://images.nasa.gov/">NASA图片视频素材库</a></p><p><a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a></p><p><a href="https://www.iconfinder.com/">ICON图标在线下载</a></p><p><a href="https://feathericons.com/">open source icons</a></p><p><a href="http://www.fly63.com/php/ico/">ICO图标在线生成</a></p><p><a href="https://fabiaoqing.com/">表情包在线网站</a></p><p><a href="https://emoji.svend.cc/">Emoji表情搜索</a></p><p><a href="https://emojiisland.com/">Emoji表情包下载</a></p><h2 id="在线设计制作"><a href="#在线设计制作" class="headerlink" title="在线设计制作"></a>在线设计制作</h2><p><a href="http://www.uugai.com/">免费logo在线制作</a></p><p><a href="https://www.zarla.com/">Zarla</a></p><p><a href="https://www.qt86.com/">艺术字体在线生成</a></p><p><a href="https://www.designcap.com/">在线海报设计工具</a></p><p><a href="https://www.uupoop.com/#/old">在线PS</a></p><p><a href="https://www.remove.bg/zh">在线抠图工具</a></p><p><a href="https://www.weixinsyt.com/">在线音频剪辑</a></p><p><a href="https://www.kapwing.com/">在线视频剪辑</a></p><p><a href="https://cn.idphoto4you.com/">全球护照照片参数和自动剪辑</a></p><p><a href="http://www.fly63.com/tool/ewm/">二维码在线生成器</a></p><p><a href="http://www.fly63.com/php/decoder/">二维码在线解码</a></p><p><a href="https://mh.cli.im/">二维码美化器</a></p><h2 id="在线办公工具"><a href="#在线办公工具" class="headerlink" title="在线办公工具"></a>在线办公工具</h2><p><a href="https://tinywow.com/">免费实用的文档、图片、 视频转换网站</a></p><p><a href="https://tools.pdf24.org/zh/">pdf在线处理套装1</a></p><p><a href="https://smallpdf.com/cn/pdf-tools">pdf在线处理套装2</a></p><p><a href="https://cn.office-converter.com/">在线多媒体转换器合集</a></p><p><a href="https://ocr.wdku.net/">在线文字识别工具</a></p><p><a href="https://docsmall.com/">在线文件压缩工具</a></p><p><a href="https://convertio.co/zh">convertio在线文件转换</a></p><p><a href="https://tableconvert.com/">在线表格转换工具</a></p><p><a href="http://www.fly63.com/tool/svg2img/">SVG转PNG工具</a></p><p><a href="http://www.fly63.com/tool/giftxt/">视频转GIF工具</a></p><p><a href="https://bigjpg.com/">图片智能放大工具</a></p><p><a href="https://carbon.now.sh/">在线代码截图工具</a></p><h2 id="系统激活"><a href="#系统激活" class="headerlink" title="系统激活"></a>系统激活</h2><p><a href="https://kms.cx/">Windows/Office的KMS一键生成脚本</a></p><h2 id="软件激活"><a href="#软件激活" class="headerlink" title="软件激活"></a>软件激活</h2><p><a href="https://alternativeto.net/">AlternativeTo 收费软件替代品网站</a></p><h2 id="在线AI工具"><a href="#在线AI工具" class="headerlink" title="在线AI工具"></a>在线AI工具</h2><ul><li><p><a href="https://chat.openai.com/%E3%80%90%E4%BC%98%E9%80%891%E3%80%91">https://chat.openai.com/【优选1】</a></p></li><li><p><a href="https://poe.com/">https://poe.com/</a></p><p>coze</p><p><a href="https://www.coze.com/">https://www.coze.com</a></p><p>Gamma</p><p>火山写作</p><p>CapCut</p><p>即创</p><p>ClipDrop</p><p>Perplexity</p><p>labs.google.com</p><p>Dreamina</p><p>TensorArt</p><p>云界AI</p><p>Claude</p><p>ChatGPT</p><p>Copilot</p><p>Bard</p></li></ul><h3 id="图片视频生成"><a href="#图片视频生成" class="headerlink" title="图片视频生成"></a>图片视频生成</h3><p><strong>图片</strong></p><ul><li><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/ai-foundation/models/sdxl">NVIDIA NGC 免费生成图片</a> 【<a href="https://www.avifp.com/397.html">生成参数“提示词”</a>】</li><li><a href="https://vispunk.com/image">免费AI图片、视频制作网站</a></li><li><a href="https://tensor.art/">https://tensor.art/</a></li><li><a href="https://www.canva.com/">https://www.canva.com/</a> </li><li><a href="https://app.leonardo.ai/">https://app.leonardo.ai/</a></li><li><a href="https://seaart.ai/">https://seaart.ai</a></li></ul><p><strong>视频</strong></p><ul><li><a href="https://runwayml.com/">https://runwayml.com/</a></li><li><a href="https://www.canva.com/">https://www.canva.com/</a> </li><li><a href="https://convert.leiapix.com/">https://convert.leiapix.com/</a></li></ul><p><strong>音乐</strong></p><ul><li><a href="https://aiva.ai/">https://aiva.ai</a></li></ul><h4 id="抠图换背景"><a href="#抠图换背景" class="headerlink" title="抠图换背景"></a>抠图换背景</h4><ul><li><a href="https://www.clipdrop.co/">https://www.clipdrop.co</a></li><li><a href="https://www.mokker.ai/">https://www.mokker.ai</a></li></ul><h4 id="可配音"><a href="#可配音" class="headerlink" title="可配音"></a>可配音</h4><ul><li><a href="https://app.fliki.ai/">https://app.fliki.ai</a></li></ul><h3 id="文字转语音"><a href="#文字转语音" class="headerlink" title="文字转语音"></a>文字转语音</h3><p><a href="https://play.ht/">https://play.ht/</a></p><h3 id="语音转文字"><a href="#语音转文字" class="headerlink" title="语音转文字"></a>语音转文字</h3><p><a href="https://www.assemblyai.com/">https://www.assemblyai.com</a></p><p>1.Whisper ：开源项目 <strong>【<a href="https://github.com/Const-me/Whisper/releases/tag/1.8.1">点击下载</a>】</strong></p><p>2.ggml-medium 语音模型： <strong>【<a href="https://www.mediafire.com/file/oy8fig7uu1ilh7z/ggml-large.bin/file">点击下载</a>】</strong></p><p>3.CPU版的Whisper：<strong>【<a href="https://github.com/chidiwilliams/buzz">开源项目</a>】</strong></p><h3 id="音乐类"><a href="#音乐类" class="headerlink" title="音乐类"></a>音乐类</h3><p><a href="https://audiohub.com/">Audiohub是一个提供免版税音乐的国外网站</a></p><h2 id="网站类"><a href="#网站类" class="headerlink" title="网站类"></a>网站类</h2><p><a href="http://acme.sh/">免费SSL证书一键生成</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="网站" scheme="https://mlwtools.cloudns.biz/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="website" scheme="https://mlwtools.cloudns.biz/tags/website/"/>
     
   </entry>
   
