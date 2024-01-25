@@ -680,14 +680,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.1k
+                    5.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    20 分
+                    21 分
                 </div>
                 
 
@@ -910,6 +910,14 @@ ls
 <span class="token attr-name">输入新的</span> <span class="token attr-value">UNIX 密码： </span>
 <span class="token attr-name">重新输入新的</span> <span class="token attr-value">UNIX 密码： </span>
 passwd：已成功更新密码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="一键常用命令"><a href="#一键常用命令" class="headerlink" title="一键常用命令"></a>一键常用命令</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">sudo</span> <span class="token function">vim</span> net-tools openssh-server -y <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> update -y <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> upgrade -y <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> clean -y <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> autoclean -y <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">curl</span> <span class="token function">wget</span> <span class="token function">tar</span> <span class="token function">unzip</span> socat <span class="token function">htop</span> python3-pip <span class="token function">git</span> -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="更改root登录"><a href="#更改root登录" class="headerlink" title="更改root登录"></a>更改root登录</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> root:root <span class="token operator">|</span> <span class="token function">sudo</span> chpasswd root <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s/^#\?PermitRootLogin.*/PermitRootLogin yes/g'</span> /etc/ssh/sshd_config <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g'</span> /etc/ssh/sshd_config <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">reboot</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -1936,7 +1944,7 @@ target
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">34k</span>&nbsp;字
+                class="white-color">37.6k</span>&nbsp;字
             
             
             
